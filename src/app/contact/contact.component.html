@@ -1,0 +1,16 @@
+<article>
+    <div id="wrapper" class="row">
+        <h1 id="subtitle" class="col-12" data-text="Kontakt">Kontakt</h1>
+    </div>
+    <div class="col-12" id="nav">
+        <button type="button" class="btn btn-light btn-sm mr-2" [routerLink]="['']">Tillbaka</button>
+        <button type="button" class="btn btn-light btn-sm mr-2" [routerLink]="['/key']">PGP</button>
+    </div>
+    <div class="row">
+        <div class="col-lg">
+            <p>Skicka epost till: <a href = "mailto: oscar.andersson.200@gmail.com">oscar.andersson.200@gmail.com</a></p>
+            <p>Kryptera med min <a [routerLink]="['/key']">PGP nyckel</a> om du vill.</p>
+            <p>Smsa: <a href="tel:0768633854">076-863 38 54</a></p>
+        </div>
+    </div>
+</article>
