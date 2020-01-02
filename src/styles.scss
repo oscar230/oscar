@@ -57,11 +57,13 @@
 }
 
 #title {
-    margin: 10px;
+	margin: 10px;
+	user-select: none;
 }
 
 #subtitle {
-    margin: 10px;
+	margin: 10px;
+	user-select: none;
 }
 
 h1, h2, h3 {
