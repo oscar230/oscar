@@ -1,13 +1,13 @@
 #background {
     background-color: black;
-    background: url(wall4.png) no-repeat center center fixed; 
+    background: url(wall.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
+    //-webkit-filter: grayscale(100%);
+    //filter: grayscale(100%);
 
     position:fixed;
     top: 0;
@@ -24,7 +24,7 @@
     background: radial-gradient(circle, rgba(0,191,255,0.23151267342874648) 0%, rgba(27,179,255,0.8645658947172619) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00bfff",endColorstr="#1bb3ff",GradientType=1); 
 
-    opacity: 25%;
+    opacity: 30%;
     
     position:fixed;
     top: 0;
