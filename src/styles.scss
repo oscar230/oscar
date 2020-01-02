@@ -45,7 +45,7 @@
 }
 
 @media only screen and (max-width: 800px) {
-	#title{ font-size: 20vw; }
+	#title{ font-size: 15vw; }
 	#subtitle{ font-size: 10vw; }
 	p, a, b, i{ font-size: 4vw; }
 }
@@ -115,4 +115,5 @@ article {
 
 #nav {
 	text-align: center;
+	padding-bottom: 20px;
 }

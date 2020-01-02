@@ -6,6 +6,9 @@
     -o-background-size: cover;
     background-size: cover;
 
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+
     position:fixed;
     top: 0;
     left: 0;
@@ -15,12 +18,14 @@
 }
 
 #colorization {
-    background: rgb(122,0,255);
-    background: -moz-radial-gradient(circle, rgba(122,0,255,0.1825613079019074) 0%, rgba(255,0,117,0.24250681198910085) 100%);
-    background: -webkit-radial-gradient(circle, rgba(122,0,255,0.1825613079019074) 0%, rgba(255,0,117,0.24250681198910085) 100%);
-    background: radial-gradient(circle, rgba(122,0,255,0.1825613079019074) 0%, rgba(255,0,117,0.24250681198910085) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7a00ff",endColorstr="#ff0075",GradientType=1); 
+    background: rgb(0,191,255);
+    background: -moz-radial-gradient(circle, rgba(0,191,255,0.23151267342874648) 0%, rgba(27,179,255,0.8645658947172619) 100%);
+    background: -webkit-radial-gradient(circle, rgba(0,191,255,0.23151267342874648) 0%, rgba(27,179,255,0.8645658947172619) 100%);
+    background: radial-gradient(circle, rgba(0,191,255,0.23151267342874648) 0%, rgba(27,179,255,0.8645658947172619) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00bfff",endColorstr="#1bb3ff",GradientType=1); 
 
+    opacity: 25%;
+    
     position:fixed;
     top: 0;
     left: 0;
@@ -31,16 +36,7 @@
     animation: colorRotate 30s linear infinite;
 }
 
-#colorization #particles-js {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
-#background #overlay {
+#overlay {
     background-color: rgba(44, 62, 80, 0.50);
 
     position:fixed;
@@ -51,12 +47,10 @@
     z-index: 0;
 }
 
-#background #overlay #content {
+#content {
     position: relative;
-    top: 5%;
     margin: auto;
     padding: 5px 15px;
-    height: 75%;
     z-index: 1;
     display: block;
     overflow-y: scroll;
@@ -64,13 +58,13 @@
 }
 
 @media only screen and (max-width: 800px) {
-    #background #overlay #content {
+    .main {
         width: 75%;
     }
 }
 
 @media only screen and (min-width: 800px) {
-    #background #overlay #content {
+    .main {
         width: 600px;
     }
 }
