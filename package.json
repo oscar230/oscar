@@ -1,0 +1,23 @@
+{
+  "name": "oscarandersson",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscar230/oscarandersson.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscar230/oscarandersson/issues"
+  },
+  "homepage": "https://github.com/oscar230/oscarandersson#readme"
+}
