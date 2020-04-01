@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="se">
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>OSCAR</title>
+        <link rel="icon" type="image/png" href="favicon.ico">
+        <meta name="author" content="Oscar Andersson">
+        <meta name="description" content="Personal webpage">
+        <meta name="keywords" content="CV Oscar Andersson oscar230 oscar.andersson.200@gmail.com sweden">
+        <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    </head>
+    <body>
+        <div id="home">
+            <div class="hero">
+                <h1>
+                    {{ title }}
+                </h1>
+                <ul>
+                    <li v-for="subtitle in subtitles">
+                        <p>
+                            {{ subtitle.text }}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="cape">
+                {{  }}
+            </div>
+        </div>
+        <script>
+            var app = new Vue({
+                el: '#home',
+                data: {
+                    title: 'Oscar Andersson',
+                    subtitles: [
+                        { text: 'Computer Engineering Student' },
+                        { text: '.NET Developer' },
+                        { text: 'Internet freedom and privacy advocate' },
+                        { text: 'DJ' },
+                    ]
+                }
+            })
+        </script>
+    </body>
+</html>

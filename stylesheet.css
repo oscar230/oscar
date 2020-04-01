@@ -1,0 +1,29 @@
+/* Pallette https://flatuicolors.com/palette/se */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 0.5vh 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 9vw;
+    color: #0be881;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3vw;
+    color: #05c46b;
+}
+
+.hero {
+    padding: 6vh 6vw;
+    background-color: #1e272e;
+}
