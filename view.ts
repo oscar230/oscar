@@ -1,5 +1,4 @@
 import Vue from 'vue';
-
 // Datastructures
 class Page {
     public hero: Hero;
@@ -165,5 +164,4 @@ let app_it = new Vue({
         page: page_home
     }
 })
-
 ShowHome();
