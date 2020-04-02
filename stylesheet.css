@@ -8,9 +8,11 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    user-select: none;
 }
 
 p {
+    color: black;
     font-family: 'Quicksand', sans-serif;
     font-size: 3vw;
 }
@@ -19,8 +21,8 @@ p {
 
 nav {
     position: absolute;
-    top: 5vh;
-    right: 5vw;
+    top: 2vh;
+    right: 2vw;
 }
 
 nav button {
@@ -32,8 +34,9 @@ nav button {
 }
 
 nav button:hover {
-    background-color: #050505;
+    background-color: #05c46b;
     color: black;
+    cursor: pointer;
 }
 
 /* HERO */
@@ -58,7 +61,7 @@ nav button:hover {
     color: #0be881;
     transform: rotate(-5deg);
     text-shadow:
-        2px 0 0 #1e272e,
+        2px 0 0 black,
         4px 0 0 #05c46b,
         6px 0 0 #05c46b,
         8px 0 0 #05c46b;
@@ -67,8 +70,9 @@ nav button:hover {
 }
 
 .hero ul {
-    position: relative;
-    top: 10vh;
+    position: absolute;
+    bottom: 2vh;
+    left: 2vw;
 }
 
 .hero p {
@@ -100,5 +104,4 @@ nav button:hover {
 
 .cape p {
     display: inline;
-    color: white;
 }
