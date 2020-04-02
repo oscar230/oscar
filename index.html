@@ -16,7 +16,7 @@
         -->
         <div id="page-home">
             <nav>
-                <button>
+                <button onclick="contact()">
                     Contact
                 </button>
             </nav>
@@ -70,9 +70,48 @@
             PAGE CONTACT
         -->
         <div id="page-contact">
-            <div>
-
+            <nav>
+                <button onclick="home()">
+                    Contact
+                </button>
+            </nav>
+            <div class="hero">
+                <h2>
+                    Contact!
+                </h2>
+                <ul>
+                    <li>
+                        <p>
+                            Say hello: <a href="mailto:oscar.andersson.200@gmail.com?Subject=Hello%20Oscar" top="_top">oscar.andersson.200@gmail.com</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Say it quietly using <a href="http://pool.sks-keyservers.net/pks/lookup?op=get&search=0xCA13F309AD2565AA">my public key</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <p style="font-size: 2vw; user-select: text;">
+                            Fingerprint 7BD7 46B9 9254 2081 76F3 D93A CA13 F309 AD25 65AA
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
+        <!--
+            SCRIPT
+        -->
+        <script>
+            var contact = function(){
+                console.log('Navigate contact.');
+                document.getElementById('page-home').style.display = 'none';
+                document.getElementById('page-contact').style.display = 'inline';
+            }
+            var home = function(){
+                console.log('Navigate home.');
+                document.getElementById('page-home').style.display = 'inline';
+                document.getElementById('page-contact').style.display = 'none';
+            }
+        </script>
     </body>
 </html>

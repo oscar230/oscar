@@ -1,6 +1,14 @@
 /* Pallette https://flatuicolors.com/palette/se */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
 
+/* INITIATE */
+#page-home{
+    display: inline;
+}
+#page-contact{
+    display: none;
+}
+
 /* TWIST N' SHOUT */
 @keyframes herocape_reveal {
     0%{ background-size: 100% 155%; }
