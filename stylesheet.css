@@ -16,6 +16,8 @@
     user-select: none;
     color: black;
     text-decoration: none;
+    -webkit-overflow-scrolling: none;
+    -ms-overflow-style: none;
 }
 h1 {
     font-family: 'Pacifico', cursive;
@@ -79,7 +81,7 @@ nav button:hover {
 .cape {
     height: 88vh;
     position: relative;
-    top: 0vh;
+    top: 5vh;
 }
 .cape .card {
     display: block;
