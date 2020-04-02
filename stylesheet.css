@@ -30,13 +30,17 @@ p {
     color: #0be881;
     transform: rotate(-5deg);
     text-shadow:
-        2px 0 0 #05c46b,
+        2px 0 0 #1e272e,
         4px 0 0 #05c46b,
         6px 0 0 #05c46b,
         8px 0 0 #05c46b;
 
     position: relative;
     top: 10vh;
+}
+
+.hero p {
+    color: #808e9b;
 }
 
 .hero ul {
@@ -46,10 +50,6 @@ p {
 
 .hero li {
     padding: 5px 0;
-}
-
-.hero p {
-    color: #808e9b;
 }
 
 .hero .arrow {
@@ -69,12 +69,12 @@ p {
 }
 
 .cape img {
-    width: 30vw;
+    display: inline;
+    width: 40vw;
     height: auto;
-    color: red;
+    filter: invert();
 }
 
 .cape p {
-    width: 30vw;
-    height: auto;
+    display: inline;
 }
