@@ -1,8 +1,13 @@
 /* Pallette https://flatuicolors.com/palette/se */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand&display=swap');
 
-/* GENERAL */
+/* TWIST N' SHOUT */
+@keyframes herocape_reveal {
+    0%{ background-size: 100% 155%; }
+    100%{ background-size: 100% 100%; }
+}
 
+/* GENERAL SECTION, WE DONT SEE COLORS */
 * {
     font-family: 'Quicksand', sans-serif;
     margin: 0;
@@ -10,76 +15,53 @@
     list-style: none;
     user-select: none;
 }
-
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 11vw;
+    transform: rotate(-5deg);
+    position: relative;
+    top: 10vh;
+}
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 6vw;
+    transform: rotate(-5deg);
+}
+a {user-select: text;}
+a:hover {text-decoration: none;}
 p {
     color: black;
     font-family: 'Quicksand', sans-serif;
     font-size: 3vw;
 }
-
-/* NAVIGATION */
-
 nav {
     position: absolute;
-    top: 2vh;
-    right: 2vw;
+    top: 5vh;
+    right: 5vw;
 }
-
 nav button {
-    color: #05c46b;
     background-color: #1e272e;
-    border: #05c46b 2px solid;
+    border: 2px solid;
     border-radius: 2vh;
     padding: 1vh 1vw;
 }
-
 nav button:hover {
-    background-color: #05c46b;
     color: black;
     cursor: pointer;
 }
-
-/* HERO */
-
 .hero {
-    background:linear-gradient(-5deg, #05c46b 50vh,#1e272e 50vh);
     padding: 6vh 6vw;
     height: 88vh;
     animation-name: herocape_reveal;
     animation-timing-function: ease-out;
     animation-duration: 10s;
 }
-
-@keyframes herocape_reveal {
-    0%{ background-size: 100% 155%; }
-    100%{ background-size: 100% 100%; }
-}
-
-.hero h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 11vw;
-    color: #0be881;
-    transform: rotate(-5deg);
-    text-shadow:
-        2px 0 0 black,
-        4px 0 0 #05c46b,
-        6px 0 0 #05c46b,
-        8px 0 0 #05c46b;
-    position: relative;
-    top: 10vh;
-}
-
 .hero ul {
     position: absolute;
-    bottom: 2vh;
-    left: 2vw;
+    bottom: 5vh;
+    left: 5vw;
 }
-
-.hero p {
-    color: #05c46b;
-    mix-blend-mode: difference;
-}
-
+.hero p {mix-blend-mode: difference;}
 .hero .arrow {
     height: 15vh;
     width: 15vw;
@@ -88,20 +70,41 @@ nav button:hover {
     bottom: -4vh;
     right: 45vw;
 }
-
-/* EVERY HERO WEARS A CAPE */
-
-.cape {
-    background-color: #05c46b;
-    height: 88vh;
-}
-
+.cape { height: 88vh; }
 .cape img {
     display: inline;
     width: 40vw;
     height: auto;
 }
-
 .cape p {
     display: inline;
 }
+
+/* SPECIFIC STYLE, WE ALL ABOUT COLORS */
+/* HOME */
+#home h1 {
+    color: #0be881;
+    text-shadow:
+        2px 0 0 black,
+        4px 0 0 #05c46b,
+        6px 0 0 #05c46b,
+        8px 0 0 #05c46b;
+}
+#home button {
+    color: #05c46b;
+    border-color: #05c46b;
+}
+#home button:hover {
+    background-color: #05c46b;
+}
+#home .hero {
+    background:linear-gradient(-5deg, #05c46b 50vh,#1e272e 50vh);
+}
+#home .hero p {
+    color: #05c46b;
+}
+#home .cape {
+    background-color: #05c46b;
+}
+
+/* CONTACT */

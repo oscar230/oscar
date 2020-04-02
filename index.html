@@ -2,7 +2,6 @@
 <html lang="se">
     <head>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>OSCAR</title>
@@ -11,87 +10,22 @@
         <meta name="description" content="Personal webpage">
         <meta name="keywords" content="CV Oscar Andersson oscar230 oscar.andersson.200@gmail.com sweden">
         <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    </head>
-    <body>
-        <!-- HOME -->
-        <div id="home">
-            <nav>
-                <button onclick="contact();">
-                    Contact me
-                </button>
-            </nav>
-            <div class="hero">
-                <h1>
-                    {{ title }}
-                </h1>
-                <ul>
-                    <li class="subtitle" v-for="subtitle in subtitles">
-                        <p>
-                            {{ subtitle.text }}
-                        </p>
-                    </li>
-                </ul>
-                <svg class="arrow" viewBox="0 0 24 24">
-                    <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
-                    <path d="M0 0h24v24H0V0z" fill="none"/>
-                </svg>
-            </div>
-            <div class="cape">
-                <img src="github.png">
-                <p>
-                    {{ github }}
-                </p>
-            </div>
-        </div>
-        <!-- CONTACT -->
-        <div id="contact">
-            <nav>
-                <button onclick="home();">
-                    Tillbaka
-                </button>
-            </nav>
-            <div class="hero">
-                <h1>
-                    {{ title }}
-                </h1>
-                <ul>
-                    <li class="subtitle" v-for="subtitle in subtitles">
-                        <p>
-                            {{ subtitle.text }}
-                        </p>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <script>
-            var contact = function() {
-                console.log("Navigate contact.");
-                return new Vue({
-                    el: '#contact',
-                    title: 'Oscar Andersson',
-                    subtitles: [
-                        { text: 'oscar.andersson.200@gmail.com' }
-                        { text: '7BD7 46B9 9254 2081 76F3 D93A CA13 F309 AD25 65AA' }
-                    ]
-                })
-            }
-            var home = function() {
-                console.log("Navigate home.");
-                return new Vue({
-                    el: '#home',
-                    data: {
-                        title: 'Oscar Andersson',
-                        subtitles: [
-                            { text: 'Computer Engineering Student' },
-                            { text: '.NET Developer' },
-                            { text: 'Internet freedom and privacy advocate' },
-                            { text: 'DJ' },
-                        ],
-                        github: 'awdad'
-                    }
-                })
-            }
-            var app = home;
+            
+            
+
+
+        </script>
+    </head>
+    <body
+        <comp-page id="app_home" v-if="seen"/>
+        <comp-page id="app_contact" v-if="seen"/>
+        <comp-page id="app_key" v-if="seen"/>
+        <comp-page id="app_dj" v-if="seen"/>
+        <comp-page id="app_it" v-if="seen"/>
+        <script>
+            // Start home
+            ShowHome();
         </script>
     </body>
 </html>
