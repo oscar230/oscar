@@ -34,11 +34,6 @@ h1 {
     position: relative;
     top: 10vh;
 }
-h2 {
-    font-family: 'Pacifico', cursive;
-    font-size: 6vw;
-    transform: rotate(-5deg);
-}
 a{
     text-decoration: underline;
 }
@@ -182,3 +177,37 @@ nav button:hover {
 }
 
 /* CONTACT */
+#page-contact {
+    background-color: #ffa801;
+}
+#page-contact a:hover {
+    color: #ffa801;
+}
+#page-contact h1 {
+    color: #ffc048;
+    text-shadow:
+        2px 0 0 black,
+        4px 0 0 #ffa801,
+        6px 0 0 #ffa801,
+        8px 0 0 #ffa801;
+}
+#page-contact button {
+    color: #ffa801;
+    border-color: #ffa801;
+}
+#page-contact button:hover {
+    color: black;
+    background-color: #ffa801;
+}
+#page-contact .hero {
+    background:linear-gradient(-5deg, #ffa801 55vh,#1e272e 55vh);
+}
+#page-contact .hero a {
+    color: #ffa801;
+}
+#page-contact .hero p {
+    color: #ffa801;
+}
+#page-contact .cape {
+    background-color: #ffa801;
+}
