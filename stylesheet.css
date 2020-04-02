@@ -41,12 +41,11 @@ nav {
 }
 nav button {
     background-color: #1e272e;
-    border: 2px solid;
+    border: 2.5px solid;
     border-radius: 2vh;
-    padding: 1vh 1vw;
+    padding: 1vh 3vw;
 }
 nav button:hover {
-    color: black;
     cursor: pointer;
 }
 .hero {
@@ -70,19 +69,44 @@ nav button:hover {
     bottom: -4vh;
     right: 45vw;
 }
-.cape { height: 88vh; }
-.cape img {
-    display: inline;
-    width: 40vw;
+.cape {
+    height: 88vh;
+    position: relative;
+    top: 10vh;
+}
+.cape .card {
+    padding: 15vh 0;
+    display: block;
+}
+.cape .card img {
+    width: 35vw;
     height: auto;
 }
-.cape p {
-    display: inline;
+.cape .card img:first-child{
+    position: absolute;
+    left: 5vw;
+}
+.cape .card img:last-child{
+    position: absolute;
+    right: 5vw;
+}
+.cape .card p {
+    width: 40vw;
+    font-size: 2.75vw;
+}
+.cape .card p:first-child{
+    position: absolute;
+    left: 15vw;
+}
+.cape .card p:last-child{
+    position: absolute;
+    right: 15vw;
 }
 
 /* SPECIFIC STYLE, WE ALL ABOUT COLORS */
 /* HOME */
-#home h1 {
+#page-home { background-color: #05c46b; }
+#page-home h1 {
     color: #0be881;
     text-shadow:
         2px 0 0 black,
@@ -90,20 +114,21 @@ nav button:hover {
         6px 0 0 #05c46b,
         8px 0 0 #05c46b;
 }
-#home button {
+#page-home button {
     color: #05c46b;
     border-color: #05c46b;
 }
-#home button:hover {
+#page-home button:hover {
+    color: black;
     background-color: #05c46b;
 }
-#home .hero {
-    background:linear-gradient(-5deg, #05c46b 50vh,#1e272e 50vh);
+#page-home .hero {
+    background:linear-gradient(-5deg, #05c46b 55vh,#1e272e 55vh);
 }
-#home .hero p {
+#page-home .hero p {
     color: #05c46b;
 }
-#home .cape {
+#page-home .cape {
     background-color: #05c46b;
 }
 
