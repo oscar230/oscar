@@ -14,6 +14,8 @@
     padding: 0;
     list-style: none;
     user-select: none;
+    color: black;
+    text-decoration: none;
 }
 h1 {
     font-family: 'Pacifico', cursive;
@@ -27,8 +29,13 @@ h2 {
     font-size: 6vw;
     transform: rotate(-5deg);
 }
-a {user-select: text;}
-a:hover {text-decoration: none;}
+a{
+    text-decoration: underline;
+}
+a:hover {
+    background: black;
+    text-decoration: none;
+}
 p {
     color: black;
     font-family: 'Quicksand', sans-serif;
@@ -72,40 +79,72 @@ nav button:hover {
 .cape {
     height: 88vh;
     position: relative;
-    top: 10vh;
+    top: 0vh;
 }
 .cape .card {
-    padding: 15vh 0;
     display: block;
+}
+.cape .card:nth-child(2){
+    position: relative;
+    top: 15vh;
+}
+.cape .card:nth-child(3){
+    position: relative;
+    top: 5vh;
+}
+.cape .card:nth-child(4){
+    position: relative;
+    top: 15vh;
+}
+.cape .card:nth-child(5){
+    position: relative;
+    top: 5vh;
 }
 .cape .card img {
     width: 35vw;
     height: auto;
 }
 .cape .card img:first-child{
-    position: absolute;
-    left: 5vw;
+    margin-left: auto;
 }
 .cape .card img:last-child{
     position: absolute;
-    right: 5vw;
+    right: 0;
 }
 .cape .card p {
-    width: 40vw;
+    width: 50vw;
     font-size: 2.75vw;
 }
 .cape .card p:first-child{
-    position: absolute;
-    left: 15vw;
+    position: relative;
+    left: 14vw;
+    top: 13vw;
+    text-align: right;
 }
 .cape .card p:last-child{
+    position: relative;
+    right: -35vw;
+    top: -9vw;
+}
+.cape .legal {
     position: absolute;
-    right: 15vw;
+    bottom: 1vh;
+    left: 18vw;
+}
+.cape .legal p {
+    text-align: center;
+    font-size: 2vw;
+    opacity: 0.5;
 }
 
 /* SPECIFIC STYLE, WE ALL ABOUT COLORS */
 /* HOME */
-#page-home { background-color: #05c46b; }
+#page-home {
+    background-color: #05c46b;
+}
+#page-home a:hover {
+    color: #05c46b;
+}
 #page-home h1 {
     color: #0be881;
     text-shadow:
