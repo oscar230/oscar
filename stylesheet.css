@@ -10,13 +10,17 @@
     list-style: none;
 }
 
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3vw;
+}
+
 /* HERO */
 
 .hero {
-	background:linear-gradient(-5deg, #05c46b 10%,#1e272e 10%);
+	background:linear-gradient(-5deg, #05c46b 15%,#1e272e 15%);
    
     padding: 6vh 6vw;
-    background-color: #1e272e;
     height: 88vh;
 }
 
@@ -30,19 +34,47 @@
         4px 0 0 #05c46b,
         6px 0 0 #05c46b,
         8px 0 0 #05c46b;
+
+    position: relative;
+    top: 10vh;
+}
+
+.hero ul {
+    position: relative;
+    top: 20vh;
 }
 
 .hero li {
     padding: 5px 0;
 }
 
-.stamp {
-    width: 55vw;
-    padding: 1vh 1vw;
+.hero p {
+    color: #808e9b;
 }
 
-.stamp p {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 3vw;
-    color: #808e9b;
+.hero .arrow {
+    height: 15vh;
+    width: 15vw;
+    fill: #1e272e;
+    position: fixed;
+    bottom: -4vh;
+    right: 45vw;
+}
+
+/* EVERY HERO WEARS A CAPE */
+
+.cape {
+    background-color: #05c46b;
+    height: 88vh;
+}
+
+.cape img {
+    width: 30vw;
+    height: auto;
+    color: red;
+}
+
+.cape p {
+    width: 30vw;
+    height: auto;
 }
