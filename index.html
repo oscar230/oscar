@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="se">
     <head>
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>OSCAR</title>
@@ -10,12 +9,7 @@
         <meta name="description" content="Personal webpage">
         <meta name="keywords" content="CV Oscar Andersson oscar230 oscar.andersson.200@gmail.com sweden">
         <link rel="stylesheet" href="stylesheet.css" type="text/css">
-        <script>
-            
-            
-
-
-        </script>
+        <script src="view.js"></script>
     </head>
     <body
         <comp-page id="app_home" v-if="seen"/>
@@ -23,9 +17,5 @@
         <comp-page id="app_key" v-if="seen"/>
         <comp-page id="app_dj" v-if="seen"/>
         <comp-page id="app_it" v-if="seen"/>
-        <script>
-            // Start home
-            ShowHome();
-        </script>
     </body>
 </html>
