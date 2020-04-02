@@ -15,13 +15,41 @@ p {
     font-size: 3vw;
 }
 
+/* NAVIGATION */
+
+nav {
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
+}
+
+nav button {
+    color: #05c46b;
+    background-color: #1e272e;
+    border: #05c46b 2px solid;
+    border-radius: 2vh;
+    padding: 1vh 1vw;
+}
+
+nav button:hover {
+    background-color: #050505;
+    color: black;
+}
+
 /* HERO */
 
 .hero {
-	background:linear-gradient(-5deg, #05c46b 15%,#1e272e 15%);
-   
+    background:linear-gradient(-5deg, #05c46b 50vh,#1e272e 50vh);
     padding: 6vh 6vw;
     height: 88vh;
+    animation-name: herocape_reveal;
+    animation-timing-function: ease-out;
+    animation-duration: 10s;
+}
+
+@keyframes herocape_reveal {
+    0%{ background-size: 100% 155%; }
+    100%{ background-size: 100% 100%; }
 }
 
 .hero h1 {
@@ -34,22 +62,18 @@ p {
         4px 0 0 #05c46b,
         6px 0 0 #05c46b,
         8px 0 0 #05c46b;
+    position: relative;
+    top: 10vh;
+}
 
+.hero ul {
     position: relative;
     top: 10vh;
 }
 
 .hero p {
-    color: #808e9b;
-}
-
-.hero ul {
-    position: relative;
-    top: 20vh;
-}
-
-.hero li {
-    padding: 5px 0;
+    color: #05c46b;
+    mix-blend-mode: difference;
 }
 
 .hero .arrow {
@@ -72,9 +96,9 @@ p {
     display: inline;
     width: 40vw;
     height: auto;
-    filter: invert();
 }
 
 .cape p {
     display: inline;
+    color: white;
 }
