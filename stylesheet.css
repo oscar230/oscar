@@ -9,12 +9,6 @@
     display: none;
 }
 
-/* TWIST N' SHOUT */
-@keyframes herocape_reveal {
-    0%{ background-size: 100% 155%; }
-    100%{ background-size: 100% 100%; }
-}
-
 /* GENERAL SECTION, WE DONT SEE COLORS */
 * {
     font-family: 'Quicksand', sans-serif;
@@ -60,13 +54,28 @@ nav button {
 nav button:hover {
     cursor: pointer;
 }
+@keyframes herocape_reveal {
+    0%{ background-size: 100% 155%; }
+    100%{ background-size: 100% 100%; }
+}
+@-webkit-keyframes herocape_reveal {
+    0%{ background-size: 100% 155%; }
+    100%{ background-size: 100% 100%; }
+}
+
 .hero {
     padding: 6vh 6vw;
     height: 88vh;
     animation-name: herocape_reveal;
     animation-timing-function: ease-out;
     animation-duration: 10s;
+    @supports (-webkit-appearance:none) {
+        -webkit-animation-name: herocape_reveal;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-timing-function: ease-out;
+    }
 }
+
 .hero ul {
     position: absolute;
     bottom: 5vh;
@@ -160,6 +169,15 @@ nav button:hover {
         right: -48vw;
         top: -12vw;
         text-align: right;
+    }
+    /* WEBKIT PHONES*/
+    @supports (-webkit-appearance:none) {
+        h1 {
+            font-size: 11vw;
+        }
+        .hero ul{
+            bottom: 30vh;
+        }
     }
 }
 
