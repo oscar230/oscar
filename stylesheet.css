@@ -91,19 +91,7 @@ nav button:hover {
 }
 .cape .card:nth-child(2){
     position: relative;
-    top: 15vh;
-}
-.cape .card:nth-child(3){
-    position: relative;
-    top: 5vh;
-}
-.cape .card:nth-child(4){
-    position: relative;
-    top: 15vh;
-}
-.cape .card:nth-child(5){
-    position: relative;
-    top: 5vh;
+    top: 30vh;
 }
 .cape .card img {
     width: 35vw;
@@ -128,7 +116,7 @@ nav button:hover {
 }
 .cape .card p:last-child{
     position: relative;
-    right: -35vw;
+    right: -40vw;
     top: -9vw;
 }
 .cape .legal {
