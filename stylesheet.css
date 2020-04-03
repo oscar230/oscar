@@ -141,7 +141,6 @@ nav button:hover {
 /* PHONES */
 @media screen and (max-width: 576px){
     h1 {
-        font-size: 12vw;
         top: 30vh;
     }
     p {
@@ -172,9 +171,6 @@ nav button:hover {
     }
     /* WEBKIT PHONES*/
     @supports (-webkit-appearance:none) {
-        h1 {
-            font-size: 11vw;
-        }
         .hero ul{
             bottom: 30vh;
         }
