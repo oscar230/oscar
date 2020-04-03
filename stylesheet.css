@@ -129,6 +129,39 @@ nav button:hover {
     font-size: 2vw;
     opacity: 0.5;
 }
+/* PHONES */
+@media screen and (max-width: 576px){
+    h1 {
+        font-size: 12vw;
+        top: 30vh;
+    }
+    p {
+        font-size: 5vw;
+    }
+    .hero ul{
+        bottom: 40vh;
+    }
+    .cape .card p{
+        font-size: 4vw;
+    }
+    .cape .card img {
+        width: 50vw;
+    }
+    .cape .card:nth-child(2){
+        position: relative;
+        top: 20vh;
+    }
+    .cape .card p:first-child{
+        left: 2vw;
+        top: 30vw;
+        text-align: left;
+    }
+    .cape .card p:last-child{
+        right: -48vw;
+        top: -12vw;
+        text-align: right;
+    }
+}
 
 /* SPECIFIC STYLE, WE ALL ABOUT COLORS */
 /* HOME */
