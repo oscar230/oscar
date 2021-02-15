@@ -59,7 +59,7 @@
 <div>
     <img class="img-hero" src="{ imgSrc }" alt="{ imgAlt }">
     <img class="img-cape" src="{ imgSrc }" alt="" role="presentation">
-    <h1 class="title">{ title }</h1>
+    <h1 class="title unselectable">{ title }</h1>
 
     <!--Turbulence effect-->
     <svg>

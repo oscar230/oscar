@@ -18,5 +18,5 @@
 </style>
 
 <div>
-    <span class="content">{ @html htmlContent }</span>
+    <span class="content unselectable">{ @html htmlContent }</span>
 </div>
