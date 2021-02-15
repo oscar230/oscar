@@ -71,13 +71,8 @@ export default {
 		production && terser()
 	],
 	watch: {
-		clearScreen: true,
-		// if the chokidar option is given, rollup-watch will
-		// use it instead of fs.watch. You will need to install
-		// chokidar separately.
-		//
-		// this options object is passed to chokidar. if you
-		// don't have any options, just pass `chokidar: true`
-		chokidar: false
+		chokidar: {
+			usePolling: true
+        }
 	}
 };
