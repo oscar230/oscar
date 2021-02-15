@@ -1,6 +1,15 @@
 @font-face{
 	font-family: 'Vendura';
 	src: url(/fonts/Vendura-SemiBold.otf);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'Vendura';
+	src: url(/fonts/Vendura-SemiBoldItalic.otf);
+	font-weight: normal;
+	font-style: italic;
 }
 
 html, body {
