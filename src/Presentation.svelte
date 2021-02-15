@@ -19,7 +19,7 @@
         100% {letter-spacing: 0.7em;}
     }
 
-    .title a {
+    .title {
         display: block;
         position: relative;
         top: 48vh;
@@ -34,6 +34,12 @@
         animation-name: anim-letter-spacing;
         animation-duration: 3s;
         animation-timing-function: ease-out;
+    }
+
+    .title:hover {
+        color: #ffc048;
+        text-decoration: underline;
+        text-shadow: 1px 1px #ffa801, 2px 2px #ffa801;
     }
 
     @keyframes anim-hero-position {
@@ -61,7 +67,7 @@
 <div>
     <img class="img-hero" src="{ imgSrc }" alt="{ imgAlt }">
     <img class="img-cape" src="{ imgSrc }" alt="" role="presentation">
-    <h1 class="title"><a href="{ link }">{ title }</a></h1>
+    <h1><a class="title" href="{ link }">{ title }</a></h1>
 
     <!--Turbulence effect-->
     <svg>
