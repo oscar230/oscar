@@ -2,6 +2,7 @@
     export let imgSrc;
     export let imgAlt;
     export let title;
+    export let link;
 </script>
 
 <style>
@@ -18,27 +19,37 @@
         100% {letter-spacing: 0.7em;}
     }
 
-    .title {
+    .title a {
         display: block;
         position: relative;
         top: 48vh;
         left: -8vw;
         font-size: 7vw;
         text-align: center;
-        color: #d2dae2;
+        color: #ffc048;
+        text-decoration: none;
+        text-shadow: 1px 1px #ffa801, 2px 2px #ffa801;
+        opacity: 80%;
         letter-spacing: 0.7em;
         animation-name: anim-letter-spacing;
         animation-duration: 3s;
         animation-timing-function: ease-out;
-        opacity: 85%;
     }
+
+    @keyframes anim-hero-position {
+        0%   {object-position: 50% 25%;}
+        100% {object-position: 50% 50%;}
+    }
+
     .img-hero, .img-cape {
         position: absolute;
         display: block;
         width: 100%;
         height: 70vh;
         object-fit: cover;
-        object-position: 50% 20%;
+        object-position: 50% 50%;
+        animation-name: anim-hero-position;
+        animation-duration: 10s;
     }
     
     .img-cape {
@@ -50,7 +61,7 @@
 <div>
     <img class="img-hero" src="{ imgSrc }" alt="{ imgAlt }">
     <img class="img-cape" src="{ imgSrc }" alt="" role="presentation">
-    <h1 class="title">{ title }</h1>
+    <h1 class="title"><a href="{ link }">{ title }</a></h1>
 
     <!--Turbulence effect-->
     <svg>
