@@ -1,7 +1,17 @@
+@font-face{
+	font-family: 'Vendura';
+	src: url(/fonts/Vendura-SemiBold.otf);
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
 	position: relative;
 	width: 100%;
 	height: 100%;
+	background-color: #1e272e;
+}
+
+h1, h2, h3, p {
+	font-family: "Vendura", "Times New Roman", Times, serif;
 }
