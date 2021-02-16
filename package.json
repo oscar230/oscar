@@ -1,6 +1,8 @@
 {
-  "name": "svelte-app",
+  "name": "oscaande.se",
   "version": "1.0.0",
+  "description": "Website oscaande.se build using Svelte, published using Docker",
+  "author": "Oscar Andersson <oscar.andersson.200@gmail.com>",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
