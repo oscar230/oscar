@@ -1,0 +1,5 @@
+services:
+  web:
+    build: .
+    ports:
+      - "46285:80"
