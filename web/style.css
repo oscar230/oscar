@@ -1,0 +1,23 @@
+html {
+    background-color: black;
+}
+
+body {
+    color: azure;
+    font-family: monospace;
+    width: 75vw;
+    margin: auto 12.5vw;
+}
+
+q {
+    color: gray;
+}
+
+a:link, a:visited {
+    color: tomato;
+    text-decoration: underline;
+}
+
+a:hover, a:active {
+    color:red;
+}
