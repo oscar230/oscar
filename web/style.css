@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Gvtime;
+    src: url('Gvtime-Regular.ttf') format("truetype"),
+         url('Gvtime-Regular.woff2') format('woff2'),
+         url('Gvtime-Regular.woff') format('woff');
+}
+
 html {
     background-color: black;
 }
@@ -7,6 +14,14 @@ body {
     font-family: monospace;
     width: 75vw;
     margin: auto 12.5vw;
+}
+
+h1 {
+    font-family: Gvtime, serif;
+    font-size: 5em;
+    margin-top: 0.25em;
+    margin-bottom: 0;
+    text-shadow: 0.025em 0.025em tomato;
 }
 
 q {
