@@ -6,11 +6,11 @@
 }
 
 html {
-    background-color:   black;
+    background-color: black;
 }
 
 body {
-    color: azure;
+    color: #f5f6fa;
     font-family: monospace;
     width: 75vw;
     margin: auto 12.5vw;
@@ -21,11 +21,10 @@ h1 {
     font-size: 5em;
     margin-top: 0.25em;
     margin-bottom: 0;
-    text-shadow: 0.025em 0.025em lightseagreen;
 }
 
-h2 {
-    text-shadow: 0.025em 0.025em lightseagreen;
+h1,h2 {
+    text-shadow: 0.025em 0.025em #00a8ff;
 }
 
 h2 img {
@@ -34,14 +33,14 @@ h2 img {
 }
 
 q {
-    color: slategray;
+    color: #7f8fa6;
 }
 
 a:link, a:visited {
-    color:skyblue;
+    color:#0097e6;
     text-decoration: underline;
 }
 
 a:hover, a:active {
-    color: lightseagreen;
+    color: #00a8ff;
 }
