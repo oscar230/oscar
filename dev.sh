@@ -1,10 +1,12 @@
 #!/bin/bash
 SRCDIR="./src/"
 OUTDIR="./out/"
-SRCHASHSUM="NULL"
+SRCHASHSUM=$(sh ./hashdir.sh $SRCDIR)
+
+sh "./build-site.sh"
+open $(realpath $OUTDIR/index.html) &
 
 echo "\e[34mWatching directory $SRCDIR...\e[39m"
-open $(realpath $OUTDIR/index.html) &
 while true; do
     PRESRCHASHSUM=$SRCHASHSUM
     SRCHASHSUM=$(sh ./hashdir.sh $SRCDIR)
