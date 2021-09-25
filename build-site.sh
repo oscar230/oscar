@@ -12,7 +12,6 @@ cp $SRCDIR/* $OUTDIR 2>/dev/null
 
 for page in $PAGES; do
     [ -e "$page" ] || continue
-    echo $page
     sh build-page.sh $SRCDIR $OUTDIR $(realpath $page)
 done
 
