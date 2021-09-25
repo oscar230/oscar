@@ -4,7 +4,9 @@ OUTDIR="./out/"
 SRCHASHSUM=$(sh ./hashdir.sh $SRCDIR)
 
 sh "./build-site.sh"
-open $(realpath $OUTDIR/index.html) &
+
+echo "\e[34mWill open $(realpath $OUTDIR/index.html) using default browser.\e[39m"
+open $(realpath $OUTDIR/index.html) 2>/dev/null &
 
 echo "\e[34mWatching directory $SRCDIR...\e[39m"
 while true; do
