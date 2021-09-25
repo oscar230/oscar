@@ -1,0 +1,3 @@
+# Free as in beer and speech.
+# Please don't abuse.
+User-agent: *
