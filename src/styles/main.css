@@ -23,7 +23,7 @@ header h1 {
     margin-bottom: 0;
 }
 
-header nav a[aria-disabled="true"] {
+header nav a[href=""] {
     color: #f5f6fa;
     text-decoration: none;
 }
