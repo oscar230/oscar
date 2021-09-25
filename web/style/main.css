@@ -16,11 +16,16 @@ body {
     margin: auto 12.5vw;
 }
 
-h1 {
+header h1 {
     font-family: Gvtime, serif;
-    font-size: 5em;
+    font-size: 7em;
     margin-top: 0.25em;
     margin-bottom: 0;
+}
+
+header nav a[aria-disabled="true"] {
+    color: #f5f6fa;
+    text-decoration: none;
 }
 
 h1,h2 {
