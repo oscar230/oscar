@@ -16,7 +16,7 @@ body {
     margin: auto 12.5vw;
 }
 
-header h1 {
+header #globalTitle {
     font-family: Gvtime, serif;
     font-size: 7em;
     margin-top: 0.25em;
@@ -28,7 +28,7 @@ header nav a[href=""] {
     text-decoration: none;
 }
 
-h1,h2 {
+#globalTitle, h1,h2 {
     text-shadow: 0.025em 0.025em #00a8ff;
 }
 
@@ -48,4 +48,9 @@ a:link, a:visited {
 
 a:hover, a:active {
     color: #00a8ff;
+}
+
+.flag {
+    width: auto;
+    height: 0.75em;
 }
