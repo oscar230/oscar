@@ -8,12 +8,23 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-    <header>
-        <h1>Oscaande</h1>
-        <nav>
-            <a href="index.html">Homepage</a>
-            <a href="security.html">Cyber Security Guide</a>
-            <a href="3cmc.html">3-CMC</a>
+<body itemscope itemtype="https://schema.org/WebPage">  
+    <meta itemprop="accessibilityControl" content="fullKeyboardControl">
+    <meta itemprop="accessibilityControl" content="fullMouseControl">
+    <meta itemprop="accessibilityHazard" content="noFlashingHazard">
+    <meta itemprop="accessibilityHazard" content="noMotionSimulationHazard">
+    <meta itemprop="accessibilityHazard" content="noSoundHazard">
+    <meta itemprop="accessibilityAPI" content="ARIA">
+    <header itemscope itemtype="https://schema.org/Organization">
+        <p id="globalTitle" itemprop="name">
+            <a href="index.html" itemprop="url"></a>
+            Wonky
+        </p>
+        <nav aria-label="Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <a href="index.html" itemprop="url">Go to homepage</a>
+            <a href="blog.html" itemprop="url">Read the blog</a>
+            <a href="security.html" itemprop="url">Cyber Security Guide</a>
+            <a href="3cmc.html" itemprop="url">3-CMC</a>
         </nav>
     </header>
+    <main aria-label="Main content" aria-label="Main content" itemscope itemtype="https://schema.org/Blog">
