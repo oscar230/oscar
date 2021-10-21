@@ -9,27 +9,25 @@ html {
     background-color: black;
 }
 
-body {
+body{
     color: #f5f6fa;
     font-family: monospace;
     width: 75vw;
-    margin: auto 12.5vw;
+    margin: 0 12.5vw;
 }
 
-header #globalTitle {
+footer {
+    margin-top: 10vh;
+}
+
+h1, h2 {
+    text-shadow: 0.025em 0.025em #00a8ff;
+}
+
+h1 {
     font-family: Gvtime, serif;
     font-size: 7em;
-    margin-top: 0.25em;
-    margin-bottom: 0;
-}
-
-header nav a[href=""] {
-    color: #f5f6fa;
-    text-decoration: none;
-}
-
-#globalTitle, h1,h2 {
-    text-shadow: 0.025em 0.025em #00a8ff;
+    margin: 0;
 }
 
 h2 img {
