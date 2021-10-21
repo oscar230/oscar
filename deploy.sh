@@ -1,5 +1,5 @@
 #!/bin/bash
+sh build-site.sh
 docker-compose up --force-recreate --build -d
 docker image prune -f
-docker ps | grep "oscar.wonky.se"
-echo "Deployed oscar.wonky.se!"
+echo "Deployed!"
