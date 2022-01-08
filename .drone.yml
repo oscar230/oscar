@@ -1,6 +1,6 @@
 kind: pipeline
 type: docker
-name: build
+name: build-and-upload
 
 steps:
   - name: build-site-script
