@@ -1,0 +1,17 @@
+kind: pipeline
+type: docker
+name: build
+
+steps:
+  - name: telgram_notify
+    image: appleboy/drone-telegram
+    settings:
+      token:
+        from_secret: telegram_token
+      to:
+        from_secret: telegram_chat_id
+      message: "oscar.wonky.se"
+
+trigger:
+  event:
+  - push
