@@ -3,6 +3,11 @@ type: docker
 name: build
 
 steps:
+  - name: build
+    image: alpine:latest
+    commands:
+    - sh build-site.sh
+
   - name: telgram_notify
     image: appleboy/drone-telegram
     settings:
@@ -10,8 +15,17 @@ steps:
         from_secret: telegram_token
       to:
         from_secret: telegram_chat_id
-      message: "oscar.wonky.se"
+      message: "oscarwonkyse"
+
+  - name: registry  
+    image: plugins/docker
+    settings:
+      username: admin
+      password:
+        from_secret: docker_password
+      repo: docker.wonky.se:admin/oscarwonkyse
+      tags: latest
 
 trigger:
-  event:
-  - push
+  branch:
+  - master
