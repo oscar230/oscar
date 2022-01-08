@@ -3,21 +3,12 @@ type: docker
 name: build
 
 steps:
-  - name: build
-    image: alpine:latest
+  - name: build-site-script
+    image: debian
     commands:
     - sh build-site.sh
 
-  - name: telgram_notify
-    image: appleboy/drone-telegram
-    settings:
-      token:
-        from_secret: telegram_token
-      to:
-        from_secret: telegram_chat_id
-      message: "oscarwonkyse"
-
-  - name: registry  
+  - name: upload-image-to-registry
     image: plugins/docker
     settings:
       username: admin
@@ -25,6 +16,15 @@ steps:
         from_secret: docker_password
       repo: docker.wonky.se:admin/oscarwonkyse
       tags: latest
+    
+# - name: telgram-notify
+#   image: appleboy/drone-telegram
+#   settings:
+#     token:
+#       from_secret: telegram_token
+#     to:
+#       from_secret: telegram_chat_id
+#     message: "oscarwonkyse"
 
 trigger:
   branch:
