@@ -2,29 +2,33 @@ kind: pipeline
 type: docker
 name: build-and-upload
 
+platform:
+  arch: amd64
+  os: linux
+
 steps:
   - name: build-site-script
-    image: debian
+    image: debian:latest
     commands:
     - sh build-site.sh
 
-  # - name: upload-image-to-registry
-  #   image: plugins/docker
-  #   settings:
-  #     username: admin
-  #     password:
-  #       from_secret: docker_password
-  #     repo: docker.wonky.se:admin/oscarwonkyse
-  #     tags: latest
+  - name: upload-image-to-registry
+    image: plugins/docker
+    settings:
+      username: admin
+      password:
+        from_secret: docker_password
+      repo: docker.wonky.se:admin/oscarwonkyse
+      tags: latest
     
-# - name: telgram-notify
-#   image: appleboy/drone-telegram
-#   settings:
-#     token:
-#       from_secret: telegram_token
-#     to:
-#       from_secret: telegram_chat_id
-#     message: "oscarwonkyse"
+  - name: telgram-notify
+    image: appleboy/drone-telegram
+    settings:
+      token:
+        from_secret: telegram_token
+      to:
+        from_secret: telegram_chat_id
+      message: "oscarwonkyse"
 
 trigger:
   branch:
