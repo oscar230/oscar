@@ -7,19 +7,19 @@ platform:
   os: linux
 
 steps:
-  - name: build-site-script
-    image: debian:latest
-    commands:
-    - sh build-site.sh
+  # - name: build-site-script
+  #   image: debian:latest
+  #   commands:
+  #   - sh build-site.sh
 
-  - name: upload-image-to-registry
-    image: plugins/docker
-    settings:
-      username: admin
-      password:
-        from_secret: docker_password
-      repo: docker.wonky.se:admin/oscarwonkyse
-      tags: latest
+  # - name: upload-image-to-registry
+  #   image: plugins/docker
+  #   settings:
+  #     username: admin
+  #     password:
+  #       from_secret: docker_password
+  #     repo: docker.wonky.se:admin/oscarwonkyse
+  #     tags: latest
     
   - name: telgram-notify
     image: appleboy/drone-telegram
