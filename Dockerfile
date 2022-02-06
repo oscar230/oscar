@@ -1,8 +1,8 @@
-FROM debian:stable AS build-env
+FROM alpine:3 AS build-env
 WORKDIR /app
 COPY build-site.sh ./
 COPY build-page.sh ./
-COPY src ./
+COPY src/ ./
 RUN sh build-site.sh
 
 
