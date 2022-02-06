@@ -3,5 +3,5 @@ services:
   web:
     build: .
     ports:
-      - "127.0.0.1:62001:80"
+      - "4003:80"
     restart: always
