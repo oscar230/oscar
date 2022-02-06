@@ -10,8 +10,13 @@ steps:
   - name: docker
     image: plugins/docker
     settings:
-      repo: localhost:5000/oscarwonkyse
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      repo: registry.wonky.se/oscarwonkyse
       tags: latest
+      registry: registry.wonky.se
 
 trigger:
   branch:
