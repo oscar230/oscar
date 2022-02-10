@@ -6,7 +6,7 @@ COPY src/ ./
 RUN sh build-site.sh
 
 
-FROM nginx:stable
+FROM nginx:stable-alpine
 WORKDIR /app
 COPY --from=build-env /app/out/ /usr/share/nginx/html/
 COPY nginx.conf /etc/nginx/conf.d/default.conf
