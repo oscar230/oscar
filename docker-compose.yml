@@ -1,7 +1,7 @@
 version: "3.0"
 services:
   web:
-    build: .
+    image: oscaande/oscarwonkyse:latest
     ports:
-      - "4003:80"
+      - 127.0.0.1:4009:80
     restart: always
