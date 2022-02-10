@@ -16,7 +16,7 @@ steps:
         from_secret: docker_password
       repo: hub.wonky.se/oscarwonkyse
       tags: latest
-      registry: registry.wonky.se
+      registry: localhost:5000
 
 trigger:
   branch:
