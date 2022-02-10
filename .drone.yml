@@ -16,7 +16,7 @@ steps:
         from_secret: docker_password
       repo: admin/oscarwonkyse
       tags: latest
-      registry: http://registry:5000
+      registry: registry:5000
 
 trigger:
   branch:
