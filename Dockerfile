@@ -7,7 +7,8 @@ RUN sh build-site.sh
 
 
 FROM nginx:stable-alpine
-WORKDIR /app
-COPY --from=build-env /app/out/ .
-COPY nginx.conf /etc/nginx/nginx.conf
+WORKDIR /usr/share/nginx/html/
+RUN rm -rf ./*
+COPY --from=build-env /app/out/* ./
+COPY nginx.conf /etc/nginx/conf.d/
 EXPOSE 80

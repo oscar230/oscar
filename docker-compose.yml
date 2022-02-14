@@ -1,7 +1,13 @@
-version: "3.0"
+version: "3"
 services:
-  web:
+  oscarwonkyse:
     image: oscaande/oscarwonkyse:latest
     ports:
       - 127.0.0.1:4009:80
     restart: always
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/.docker/config.json:/config.json
+    command: --interval 120
