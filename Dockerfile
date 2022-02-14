@@ -3,8 +3,7 @@ WORKDIR /app/
 COPY ./ ./
 RUN sh build-site.sh
 
-FROM nginx:stable
-COPY --from=build-stage /app/out/ /usr/share/nginx/html/
-COPY --from=build-stage /app/nginx.conf /etc/nginx/conf.d/default.conf
-CMD ["nginx"]
+FROM busybox:stable
+COPY --from=build-stage /app/out/ /var/www/
+CMD ["httpd", "-f", "-h", "/var/www/", "-p", "80"]
 EXPOSE 80
