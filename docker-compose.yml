@@ -1,11 +1,13 @@
 version: "3"
 services:
-  oscarwonkyse_317F0732:
+  web:
+    container_name: oscarwonkyse_317F0732
     image: oscaande/oscarwonkyse:latest
     ports:
       - 4009:80
     restart: always
-  watchtower_317F0732:
+  watchtower:
+    container_name: watchtower_317F0732
     image: containrrr/watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
