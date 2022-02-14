@@ -3,7 +3,7 @@ WORKDIR /app/
 COPY ./ ./
 RUN sh build-site.sh
 
-FROM golang:alpine AS build-stage-server
+FROM golang:latest AS build-stage-server
 COPY server.go server.go
 RUN go build -ldflags "-linkmode external -extldflags -static" -a server.go
 
