@@ -5,7 +5,6 @@ RUN sh build-site.sh
 
 FROM nginx:stable-alpine
 COPY --from=build-stage /app/out/ /usr/share/nginx/html/
-COPY --from=build-stage nginx.conf /etc/nginx/conf.d/default.conf
-RUN ls -al ./
+COPY --from=build-stage /app/nginx.conf /etc/nginx/conf.d/default.conf
 CMD ["nginx"]
 EXPOSE 80
