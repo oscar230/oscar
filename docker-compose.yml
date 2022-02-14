@@ -14,4 +14,4 @@ services:
       - /root/.docker/config.json:/config.json
     command: --interval 1 oscarwonkyse_317F0732
     depends_on:
-      - oscarwonkyse_317F0732
+      - web

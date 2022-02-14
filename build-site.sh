@@ -14,4 +14,4 @@ for page in $PAGES; do
     sh build-page.sh $SRCDIR $OUTDIR $(realpath $page)
 done
 
-echo "\e[32mSite built successfully!\e[39m"
+echo "Site built successfully!"
