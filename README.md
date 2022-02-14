@@ -9,9 +9,10 @@ Personal portfolio for [Oscar Andersson](https://oscaande.se).
 
 # Dependencies
 * Site using [UK palette](https://flatuicolors.com/palette/gb).
-* [Bash colors](https://misc.flogisoft.com/bash/tip_colors_and_formatting).
-* Thanks to [Sid Palas article at DevOps Directive](https://devopsdirective.com/posts/2021/04/tiny-container-image/) for the tiny docker image.
-
+* [Bash colors](https://misc.flogisoft.com/bash/tip_colors_and_formatting) at flogisoft.
+* Sid Palas [article at DevOps Directive](https://devopsdirective.com/posts/2021/04/tiny-container-image/) for the tiny docker image.
+* Sebastiaan Tammers [answer](https://github.com/containrrr/watchtower/discussions/579#discussioncomment-26045) on how to schedule watchtower.
+* James Coyles [tutorial](https://www.jamescoyle.net/how-to/docker-compose-files/3323-docker-compose-file-for-watchtower) on how to use watchtowers ``com.centurylinklabs.watchtower.enable=true`` label.
 # Develop
 ## Create pages
 Create a file in ``src/pages/`` with the extension ``html``. Insert your text in between ``<article>`` and ``</article>``. All HTML tags are excepted. Make sure to use the relative path ``resources/`` for images and NOT ``../resources/``!
