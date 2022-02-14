@@ -1,8 +1,7 @@
 version: "3"
 services:
-  web:
-    container_name: oscarwonkyse_317F0732
+  oscarwonkyse:
     image: oscaande/oscarwonkyse:latest
     ports:
-      - 8080:80
+      - 4009:8080
     restart: always
