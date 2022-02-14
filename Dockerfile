@@ -5,7 +5,7 @@ RUN sh build-site.sh
 
 FROM golang:alpine AS build-stage-server
 COPY server.go server.go
-RUN go build -o server .
+RUN go build -ldflags "-linkmode external -extldflags -static" -a server.go
 
 FROM scratch
 COPY --from=build-stage-static-pages /app/out/index.html index.html
