@@ -7,7 +7,7 @@ Personal portfolio for [Oscar Andersson](https://oscaande.se).
 # Build
 * Make the scripts executable ``sudo chmod +x *.sh``.
 
-# Useful links
+# Dependencies
 * Site using [UK palette](https://flatuicolors.com/palette/gb).
 * [Bash colors](https://misc.flogisoft.com/bash/tip_colors_and_formatting).
 

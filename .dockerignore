@@ -4,4 +4,3 @@ dev.sh
 docker-compose.yml
 hashdir.sh
 README.md
-nginx.conf
