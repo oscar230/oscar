@@ -5,3 +5,5 @@ services:
     ports:
       - 4009:8080
     restart: always
+    labels:
+        - "com.centurylinklabs.watchtower.enable=true"
