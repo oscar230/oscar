@@ -8,7 +8,7 @@ COPY server.go server.go
 RUN go build -ldflags "-linkmode external -extldflags -static" -a server.go
 
 FROM scratch
-COPY --from=build-stage-static-pages /app/out/index.html index.html
+COPY --from=build-stage-static-pages /app/out/ ./
 COPY --from=build-stage-server /go/server ./server
 CMD ["./server"]
 EXPOSE 80

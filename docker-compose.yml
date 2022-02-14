@@ -4,7 +4,7 @@ services:
     container_name: oscarwonkyse_317F0732
     image: oscaande/oscarwonkyse:latest
     ports:
-      - 4009:80
+      - 8080:80
     restart: always
   watchtower:
     container_name: watchtower_317F0732
@@ -12,6 +12,6 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /root/.docker/config.json:/config.json
-    command: --interval 1 oscarwonkyse_317F0732
+    command: --interval 600 oscarwonkyse_317F0732
     depends_on:
       - web

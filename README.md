@@ -10,6 +10,7 @@ Personal portfolio for [Oscar Andersson](https://oscaande.se).
 # Dependencies
 * Site using [UK palette](https://flatuicolors.com/palette/gb).
 * [Bash colors](https://misc.flogisoft.com/bash/tip_colors_and_formatting).
+* Thanks to [Sid Palas article at DevOps Directive](https://devopsdirective.com/posts/2021/04/tiny-container-image/) for the tiny docker image.
 
 # Develop
 ## Create pages
