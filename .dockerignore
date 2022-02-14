@@ -1,0 +1,6 @@
+.drone.yml
+.gitignore
+dev.sh
+docker-compose.yml
+hashdir.sh
+README.md
