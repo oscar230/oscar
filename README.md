@@ -1,4 +1,6 @@
 # Overview
+[![Build Status](https://drone.wonky.se/api/badges/oscar230/oscar.wonky.se/status.svg)](https://drone.wonky.se/oscar230/oscar.wonky.se)
+
 Personal portfolio for [Oscar Andersson](https://oscaande.se).
 
 # Acknowledgement
