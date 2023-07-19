@@ -1,22 +1,46 @@
 kind: pipeline
 type: docker
-name: build-and-upload
-
-platform:
-  arch: amd64
-  os: linux
+name: build
 
 steps:
-  - name: docker
-    image: plugins/docker
-    settings:
-      username:
-        from_secret: docker_username
-      password:
-        from_secret: docker_password
-      repo: oscaande/oscarwonkyse
-      tags: latest
-      
+- name: build-site-and-move-to-volume
+  image: alpine:latest
+  volumes:
+  - name: site
+    path: /tmp/site
+  commands:
+  - sh build-site.sh
+  - rm -rf /tmp/site/*
+  - mv out/* /tmp/site
+- name: compress-images
+  image: alpine:latest
+  volumes:
+  - name: site
+    path: /tmp/site
+  commands:
+  - apk update
+  - apk add jpegoptim
+  - cd /tmp/site
+  - find . -name '*.jpg' -o -name '*.jpeg' -exec jpegoptim --strip-all {} \;
+- name: compress-css-and-js
+  image: alpine:latest
+  volumes:
+  - name: site
+    path: /tmp/site
+  commands:
+  - apk update
+  - apk add npm
+  - npm install uglify-js -g
+  - npm install uglifycss -g
+  - cd /tmp/site
+  - find . -name '*.js' -exec uglifyjs --output {} --compress --mangle -- {} \;
+  - find . -name '*.css' -exec uglifycss --output {} {} \;
+
+volumes:
+- name: site
+  host:
+    path: /var/sites/oscar
+
 trigger:
-  branch:
-  - master
+  event:
+  - push
