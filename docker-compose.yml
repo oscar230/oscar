@@ -1,9 +1,0 @@
-version: "3"
-services:
-  oscarwonkyse:
-    image: oscaande/oscarwonkyse:latest
-    ports:
-      - 4009:8080
-    restart: always
-    labels:
-        - "com.centurylinklabs.watchtower.enable=true"
