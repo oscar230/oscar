@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+</head>
+<body>
+    <div class="window" style="width: 400px">
+        <div class="title-bar">
+            <div class="title-bar-text">about.exe</div>
+            <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <fieldset>
+                <p><b>Oscar Andersson</b> - Recreational techno DJ and self proclaimed computer genius.</p>
+                <img src="profile.jpeg" alt="Picture of Oscar Andersson">
+            </fieldset>
+            <fieldset>
+                <legend>Contact</legend>
+                <div class="field-row">
+                    <form action="https://matrix.to/#/@oscarandersson:matrix.org">
+                        <input type="submit" value="Matrix" />
+                    </form>
+                    <p>@oscarandersson:matrix.org</p>
+                </div>
+                <div class="field-row">
+                    <form action="mailto:webmasterwonky@duck.com">
+                        <input type="submit" value="Email" />
+                    </form>
+                    <p>webmasterwonky@duck.com</p>
+                </div>
+                <div class="field-row">
+                    <p>Optionally encrypt using my <a href="https://age-encryption.org/v1">age</a> public key: <i>age1k5hg5g43x3pvxy3qylarkq90xxmulnugynm5w5vy0s47hhkdgg5qdwx9k8</i></p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Paper</legend>
+                <div class="field-row">
+                    <p>
+                        My bachelor thesis dissertation:
+                        <q cite='http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-82564'>
+                            <b>Abstract [en]</b>
+                            This paper discsusses the question: is website oracles in Tor from timing DNS something we have to worry about?
+                            This paper builds apon the findings done by Rasmus Dahlberg and Tobias Pulls in thier paper Website Fingerprinting with Website Oracles.
+                            A website oracle is a side channel attack that answers the predicate: has this website been visited before?
+                            The website oracle is constructed and test are carried out, with great outcome, resulting in that website oracles from timing DNS is not an attack that puts individuals using Tor at risk, but certanly challanges the idea of an anonymity network when such a lot of data can be derived from DNS.
+                        </q>
+                    </p>
+                </div>
+                <div class="field-row">
+                    <form action="https://www.diva-portal.org/smash/get/diva2:1522023/FULLTEXT01.pdf">
+                        <input type="submit" value="Print" />
+                    </form>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>CV</legend>
+                <div class="field-row">
+                    <form action="CV.pdf">
+                        <input type="submit" value="Print" />
+                    </form>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <style>
+        body {
+            background: #008080 ;
+        }
+    </style>
+</body>
+</html>
