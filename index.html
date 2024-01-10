@@ -12,58 +12,130 @@
     <div class="container">
         <div class="row g-3">
             <div class="col">
-                <div class="window">
-                    <div class="title-bar">
-                        <div class="title-bar-text">about.exe</div>
-                        <div class="title-bar-controls">
-                            <button aria-label="Minimize"></button>
-                            <button aria-label="Maximize"></button>
-                            <button aria-label="Close"></button>
+                <div class="col">
+                    <div class="window">
+                        <div class="title-bar">
+                            <div class="title-bar-text">about.exe</div>
+                            <div class="title-bar-controls">
+                                <button aria-label="Minimize"></button>
+                                <button aria-label="Maximize"></button>
+                                <button aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="window-body">
+                            <fieldset>
+                                <p><b>Oscar Andersson</b> - Recreational techno DJ and self proclaimed computer genius.</p>
+                                <img src="resources/images/profile.jpeg" alt="Picture of Oscar Andersson" class="img-border" />
+                            </fieldset>
+                            <fieldset>
+                                <legend>Contact</legend>
+                                <div class="field-row">
+                                    <form action="https://matrix.to/#/@oscarandersson:matrix.org">
+                                        <input type="submit" value="Matrix" />
+                                    </form>
+                                    <p>@oscarandersson:matrix.org</p>
+                                </div>
+                                <div class="field-row">
+                                    <form action="mailto:webmasterwonky@duck.com">
+                                        <input type="submit" value="Email" />
+                                    </form>
+                                    <p>webmasterwonky@duck.com</p>
+                                </div>
+                                <div class="field-row">
+                                    <p>Optionally encrypt using my <a href="https://age-encryption.org/v1">age</a> public key: <i>age1k5hg5g43x3pvxy3qylarkq90xxmulnugynm5w5vy0s47hhkdgg5qdwx9k8</i></p>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Paper</legend>
+                                <div class="field-row">
+                                    <p>
+                                        My bachelor thesis dissertation:
+                                        <q cite='http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-82564'>
+                                            <b>Abstract [en]</b>
+                                            This paper discsusses the question: is website oracles in Tor from timing DNS something we have to worry about?
+                                            This paper builds apon the findings done by Rasmus Dahlberg and Tobias Pulls in thier paper Website Fingerprinting with Website Oracles.
+                                            A website oracle is a side channel attack that answers the predicate: has this website been visited before?
+                                            The website oracle is constructed and test are carried out, with great outcome, resulting in that website oracles from timing DNS is not an attack that puts individuals using Tor at risk, but certanly challanges the idea of an anonymity network when such a lot of data can be derived from DNS.
+                                        </q>
+                                    </p>
+                                </div>
+                                <div class="field-row">
+                                    <form action="https://www.diva-portal.org/smash/get/diva2:1522023/FULLTEXT01.pdf">
+                                        <input type="submit" value="Print" />
+                                    </form>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
-                    <div class="window-body">
-                        <fieldset>
-                            <p><b>Oscar Andersson</b> - Recreational techno DJ and self proclaimed computer genius.</p>
-                            <img src="resources/images/profile.jpeg" alt="Picture of Oscar Andersson" class="img-border" />
-                        </fieldset>
-                        <fieldset>
-                            <legend>Contact</legend>
-                            <div class="field-row">
-                                <form action="https://matrix.to/#/@oscarandersson:matrix.org">
-                                    <input type="submit" value="Matrix" />
-                                </form>
-                                <p>@oscarandersson:matrix.org</p>
+                </div>
+                <div class="col my-3">
+                    <div class="col">
+                        <div class="window">
+                            <div class="title-bar">
+                                <div class="title-bar-text">cv.pdf</div>
+                                <div class="title-bar-controls">
+                                    <button aria-label="Help"></button>
+                                    <button aria-label="Close"></button>
+                                </div>
                             </div>
-                            <div class="field-row">
-                                <form action="mailto:webmasterwonky@duck.com">
-                                    <input type="submit" value="Email" />
-                                </form>
-                                <p>webmasterwonky@duck.com</p>
+                            <div class="window-body">
+                                <fieldset>
+                                    <legend>CV</legend>
+                                    <div class="field-row">
+                                        <h2>Work</h2>
+                                        <img src="resources/images/computer.png" alt="A icon of a computer" />
+                                    </div>
+                                    <div class="field-row">
+                                        <p>Based in Sweden <img src="resources/images/swe.png" alt="The flag of Sweden" width="auto" height="10em" class="img-border">, I am open to remote freelance opportunities worldwide.</p>
+                                    </div>
+                                    <div class="field-row">
+                                        <div class="sunken-panel">
+                                            <table class="interactive">
+                                              <thead>
+                                                <tr>
+                                                  <th>Company</th>
+                                                  <th>Role</th>
+                                                  <th>Experience</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                    <td><a href="https://www.kazoku.se">Kazoku</a></td>
+                                                    <td>Developer and System Integration consultant</td>
+                                                    <td>
+                                                        <p>Mainly developing and system architecture</p>
+                                                        <p>Some Sales and hiring developers</p>
+                                                        <p>Working in agile teams (SCRUM)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                  <td><a href="https://www.soleil.se">Soleil</a></td>
+                                                  <td>Sitevision web developer </td>
+                                                  <td>Developing accessible web solutions (WCAG3)</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><a href="https://www.kau.se">Karlstad University</a></td>
+                                                  <td>Student</td>
+                                                  <td>Bachelor of Engineering in Computer Science (BCS)</td>
+                                                </tr>
+                                                <tr>
+                                                  <td><a href="https://www.nodinite.com">Nodinite</a></td>
+                                                  <td>Full stack developer</td>
+                                                  <td>Developing a web based customer portal</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="field-row">
+                                        <form action="resources/documents/CV.pdf">
+                                            <input type="submit" value="View CV" />
+                                        </form>
+                                        <p>View my CV for detailed references and additional information.</p>
+                                    </div>
+                                </fieldset>
                             </div>
-                            <div class="field-row">
-                                <p>Optionally encrypt using my <a href="https://age-encryption.org/v1">age</a> public key: <i>age1k5hg5g43x3pvxy3qylarkq90xxmulnugynm5w5vy0s47hhkdgg5qdwx9k8</i></p>
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Paper</legend>
-                            <div class="field-row">
-                                <p>
-                                    My bachelor thesis dissertation:
-                                    <q cite='http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-82564'>
-                                        <b>Abstract [en]</b>
-                                        This paper discsusses the question: is website oracles in Tor from timing DNS something we have to worry about?
-                                        This paper builds apon the findings done by Rasmus Dahlberg and Tobias Pulls in thier paper Website Fingerprinting with Website Oracles.
-                                        A website oracle is a side channel attack that answers the predicate: has this website been visited before?
-                                        The website oracle is constructed and test are carried out, with great outcome, resulting in that website oracles from timing DNS is not an attack that puts individuals using Tor at risk, but certanly challanges the idea of an anonymity network when such a lot of data can be derived from DNS.
-                                    </q>
-                                </p>
-                            </div>
-                            <div class="field-row">
-                                <form action="https://www.diva-portal.org/smash/get/diva2:1522023/FULLTEXT01.pdf">
-                                    <input type="submit" value="Print" />
-                                </form>
-                            </div>
-                        </fieldset>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -139,72 +211,6 @@
                     <a href="https://www.mixcloud.com/oscaande/pizzadisco">
                         <img src="resources/images/winamp.gif" alt="A animated gif of a Winamp player" height="auto" width="70%" />
                     </a>
-                </div>
-                <div class="window">
-                    <div class="title-bar">
-                        <div class="title-bar-text">cv.pdf</div>
-                        <div class="title-bar-controls">
-                            <button aria-label="Help"></button>
-                            <button aria-label="Close"></button>
-                        </div>
-                    </div>
-                    <div class="window-body">
-                        <fieldset>
-                            <legend>CV</legend>
-                            <div class="field-row">
-                                <h2>Work</h2>
-                                <img src="resources/images/computer.png" alt="A icon of a computer" />
-                            </div>
-                            <div class="field-row">
-                                <p>Based in Sweden <img src="resources/images/swe.png" alt="The flag of Sweden" width="auto" height="10em" class="img-border">, I am open to remote freelance opportunities worldwide.</p>
-                            </div>
-                            <div class="field-row">
-                                <div class="sunken-panel">
-                                    <table class="interactive">
-                                      <thead>
-                                        <tr>
-                                          <th>Company</th>
-                                          <th>Role</th>
-                                          <th>Experience</th>
-                                        </tr>
-                                      </thead>
-                                      <tbody>
-                                        <tr>
-                                            <td><a href="https://www.kazoku.se">Kazoku</a></td>
-                                            <td>Developer and System Integration consultant</td>
-                                            <td>
-                                                <p>Mainly developing and system architecture</p>
-                                                <p>Some Sales and hiring developers</p>
-                                                <p>Working in agile teams (SCRUM)</p>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                          <td><a href="https://www.soleil.se">Soleil</a></td>
-                                          <td>Sitevision web developer </td>
-                                          <td>Developing accessible web solutions (WCAG3)</td>
-                                        </tr>
-                                        <tr>
-                                          <td><a href="https://www.kau.se">Karlstad University</a></td>
-                                          <td>Student</td>
-                                          <td>Bachelor of Engineering in Computer Science (BCS)</td>
-                                        </tr>
-                                        <tr>
-                                          <td><a href="https://www.nodinite.com">Nodinite</a></td>
-                                          <td>Full stack developer</td>
-                                          <td>Developing a web based customer portal</td>
-                                        </tr>
-                                      </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="field-row">
-                                <form action="resources/documents/CV.pdf">
-                                    <input type="submit" value="View CV" />
-                                </form>
-                                <p>View my CV for detailed references and additional information.</p>
-                            </div>
-                        </fieldset>
-                    </div>
                 </div>
             </div>
         </div>
