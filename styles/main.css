@@ -1,6 +1,6 @@
 body {
     background: #008080 ;
 }
-table, th, td {
-    border: 1px solid;
+table, th, td, .img-border {
+    border: 1px solid black;
 }
