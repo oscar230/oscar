@@ -1,4 +1,4 @@
-[![Build Status](https://drone.grupp054.se/api/badges/oscar230/oscar/status.svg)](https://drone.grupp054.se/oscar230/oscar)
-
 # Acknowledgement
-* Font used is [Gv. time by bejeletter](https://www.fontspace.com/gv-time-font-f56368), thanks.
+* Icons provided by [Alex Meub](https://alexmeub.com/projects/windows-98-icons/).
+* Theme [98.css by Jordan Scales](https://github.com/jdan/98.css).
+* Using [Bootstrap](https://getbootstrap.com/) (grids only).
