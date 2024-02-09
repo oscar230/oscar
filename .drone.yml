@@ -1,46 +1,26 @@
 kind: pipeline
 type: docker
-name: build
+name: default
 
 steps:
-- name: build-site-and-move-to-volume
-  image: alpine:latest
-  volumes:
-  - name: site
-    path: /tmp/site
-  commands:
-  - sh build-site.sh
-  - rm -rf /tmp/site/*
-  - mv out/* /tmp/site
-- name: compress-images
-  image: alpine:latest
-  volumes:
-  - name: site
-    path: /tmp/site
-  commands:
-  - apk update
-  - apk add jpegoptim
-  - cd /tmp/site
-  - find . -name '*.jpg' -o -name '*.jpeg' -exec jpegoptim --strip-all {} \;
-- name: compress-css-and-js
-  image: alpine:latest
-  volumes:
-  - name: site
-    path: /tmp/site
-  commands:
-  - apk update
-  - apk add npm
-  - npm install uglify-js -g
-  - npm install uglifycss -g
-  - cd /tmp/site
-  - find . -name '*.js' -exec uglifyjs --output {} --compress --mangle -- {} \;
-  - find . -name '*.css' -exec uglifycss --output {} {} \;
+  - name: compress
+    image: node:21-alpine
+    commands:
+      - npm install -g uglify-js clean-css-cli imagemin-cli
+      - find ./src -name '*.js' -exec uglifyjs {} -o {} \;
+      - find ./src -name '*.css' -exec cleancss -o {} {} \;
+      - find ./src -type f \( -iname \*.png -o -iname \*.jpg -o -iname \*.jpeg -o -iname \*.gif \) -exec imagemin {} --out-dir=$(dirname {}) \;
 
-volumes:
-- name: site
-  host:
-    path: /var/sites/oscar
-
-trigger:
-  event:
-  - push
+  - name: rsync-copy
+    image: drillster/drone-rsync
+    settings:
+      hosts:
+        from_secret: ssh_host
+      user:
+        from_secret: ssh_username
+      key:
+        from_secret: ssh_key
+      source: ./src/
+      target: /var/www/oscar/
+      recursive: true
+      delete: true
