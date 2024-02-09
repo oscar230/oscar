@@ -6,7 +6,7 @@ steps:
   - name: compress
     image: node:21-alpine
     commands:
-      - npm install -g uglify-js clean-css-cli imagemin-cli
+      - npm install -g uglify-js clean-css-cli imagemin-cli imagemin-gifsicle
       - find ./ -name '*.js' -exec uglifyjs {} -o {} \;
       - find ./ -name '*.css' -exec cleancss -o {} {} \;
       - find ./ -type f \( -iname \*.png -o -iname \*.jpg -o -iname \*.jpeg -o -iname \*.gif \) -exec imagemin {} --out-dir=$(dirname {}) \;
