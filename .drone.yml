@@ -7,9 +7,9 @@ steps:
     image: node:21-alpine
     commands:
       - npm install -g uglify-js clean-css-cli imagemin-cli
-      - find ./src -name '*.js' -exec uglifyjs {} -o {} \;
-      - find ./src -name '*.css' -exec cleancss -o {} {} \;
-      - find ./src -type f \( -iname \*.png -o -iname \*.jpg -o -iname \*.jpeg -o -iname \*.gif \) -exec imagemin {} --out-dir=$(dirname {}) \;
+      - find ./ -name '*.js' -exec uglifyjs {} -o {} \;
+      - find ./ -name '*.css' -exec cleancss -o {} {} \;
+      - find ./ -type f \( -iname \*.png -o -iname \*.jpg -o -iname \*.jpeg -o -iname \*.gif \) -exec imagemin {} --out-dir=$(dirname {}) \;
 
   - name: rsync-copy
     image: drillster/drone-rsync
@@ -20,7 +20,8 @@ steps:
         from_secret: ssh_username
       key:
         from_secret: ssh_key
-      source: ./src/
+      exclude: [ "*.md", ".drone.yml" ]
+      source: ./
       target: /var/www/oscar/
       recursive: true
       delete: true
