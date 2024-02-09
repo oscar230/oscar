@@ -4,7 +4,7 @@ name: default
 
 steps:
   - name: compress
-    image: node:21-alpine
+    image: node:21-bookworm
     commands:
       - npm install -g uglify-js clean-css-cli imagemin-cli
       - find ./src -name '*.js' -exec uglifyjs {} -o {} \;
