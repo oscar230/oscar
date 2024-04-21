@@ -2,18 +2,40 @@ kind: pipeline
 type: docker
 name: default
 
+platform:
+  os: linux
+  arch: arm64
+
+trigger:
+  branch:
+    - main
+
 steps:
-  - name: rsync-copy
-    image: drillster/drone-rsync
+  - name: build-and-push
+    image: plugins/docker
     settings:
-      hosts:
-        from_secret: ssh_host
-      user:
-        from_secret: ssh_username
-      key:
-        from_secret: ssh_key
-      exclude: [ "*.md", ".drone.yml" ]
-      source: ./
-      target: /var/www/oscar/
-      recursive: true
-      delete: true
+      registry: registry.e012.se
+      username:
+        from_secret: registry_username
+      password:
+        from_secret: registry_password
+      repo: registry.e012.se/oscar230/oscar
+      tags: "${DRONE_SOURCE_BRANCH}"
+      dockerfile: Dockerfile
+      force_tag: false
+      purge: true
+
+  - name: deploy
+    image: alpine:latest
+    environment:
+      WATCHTOWER_HOST:
+        from_secret: watchtower-host
+      WATCHTOWER_AUTH_TOKEN:
+        from_secret: watchtower-token
+    commands:
+      - apk add --no-cache curl
+      - |
+        curl -H "Authorization: Bearer $WATCHTOWER_AUTH_TOKEN" "https://$WATCHTOWER_HOST/v1/update"
+    when:
+      status:
+        - success
