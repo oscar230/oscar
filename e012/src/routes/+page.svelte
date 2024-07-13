@@ -1,7 +1,3 @@
-<script>
-	import Counter from './Counter.svelte';
-</script>
-
 <svelte:head>
 	<title>E012</title>
 	<meta name="description" content="E012 website" />
@@ -9,7 +5,6 @@
 
 <section>
 	<h1>E012</h1>
-	<Counter />
 </section>
 
 <style>
@@ -22,6 +17,6 @@
 	}
 
 	h1 {
-		width: 100%;
+		font-size: 10vw;
 	}
 </style>
