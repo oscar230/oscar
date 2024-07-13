@@ -1,7 +1,7 @@
 # Stage 1: Prepare content
-FROM python:3-bookworm AS prepare
-WORKDIR /app
-COPY ./e012/ ./
+# FROM python:3-bookworm AS prepare
+# WORKDIR /app
+# COPY ./e012/ ./
 # Uncomment and run optimization and minification tools as needed
 # RUN pip install pillow optimize-images css-html-js-minify exif_delete
 # RUN optimize-images ./
@@ -15,18 +15,20 @@ COPY ./e012/ ./
 # RUN exif_delete --replace ./**/*.GIF
 
 # Stage 2: Build the application
-FROM node:18-alpine AS build
+FROM node:18 AS build
 WORKDIR /app
-COPY ./e012/package*.json ./
+COPY e012/package*.json ./
 RUN npm install
-COPY --from=prepare /app ./
+COPY e012/ .
 RUN npm run build
+ENV NODE_OPTIONS="--experimental-modules"
+CMD ["node", "build/server/index.js"]
 
 # Stage 3: Serve the application
-FROM node:18-alpine AS server
-WORKDIR /app
-COPY --from=build /app/build ./
-COPY ./e012/package*.json ./
-RUN npm install --production
-EXPOSE 80
-CMD ["node", "server/index.js"]
+# FROM node:18 AS server
+# WORKDIR /app
+# COPY --from=build /app/build ./
+# COPY ./e012/package*.json ./
+# RUN npm install --production
+# EXPOSE 80
+# CMD ["node", "server/index.js"]
