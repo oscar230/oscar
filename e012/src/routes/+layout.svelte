@@ -2,6 +2,17 @@
 	import Header from './Header.svelte';
 	import '../app.css';
 	import '../fonts.css';
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        const elements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6');
+        elements.forEach(el => {
+            if (Math.random() < 0.25) { // 25% chance
+                const randomClass = `rotate-${Math.ceil(Math.random() * 4)}`;
+                el.classList.add(randomClass);
+            }
+        });
+    });
 </script>
 
 <div class="app">

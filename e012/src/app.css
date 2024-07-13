@@ -7,6 +7,16 @@
 	--color-bg-2: hsl(224, 44%, 95%);
 	--color-theme-1: #ff3e00;
 	--color-theme-2: #4075a6;
+	
+
+    --color-beige: #eee8d8;
+    --color-red: #c0392b;
+    --color-dark-green: #2c3e50;
+    --color-dark-blue: #34495e;
+    --color-light-gray: #bdc3c7;
+
+
+
 	--color-text: rgba(0, 0, 0, 0.7);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
@@ -18,24 +28,46 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-attachment: fixed;
-	background-color: var(--color-bg-1);
 	background-size: 100vw 100vh;
-	background-image: radial-gradient(
-			50% 50% at 50% 50%,
-			rgba(255, 255, 255, 0.75) 0%,
-			rgba(255, 255, 255, 0) 100%
-		),
-		linear-gradient(180deg, var(--color-bg-0) 0%, var(--color-bg-1) 15%, var(--color-bg-2) 50%);
+    background-color: whitesmoke;
 }
 
-h1,
-h2,
-p {
-	font-weight: 400;
+
+/* Global Font Settings */
+body, h1, h2, h3, h4, h5, h6, p, a, span, div, li, ul, ol, blockquote, pre, code, em, strong, small {
+    font-family: 'Volta', 'JMHTypewriter', 'ElegantTypewriter', 'AnotherTypewriter', serif;
+    color: black;
+}
+
+/* Specific Header Styles */
+h1 {
+    font-weight: 700; /* Use bold version of Volta */
+	text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 600; /* Slightly less bold than h1 */
+}
+
+h3, h4, h5, h6, strong {
+    font-weight: 500; /* Medium weight for h3 */
 }
 
 p {
-	line-height: 1.5;
+    font-family: 'JMHTypewriter', 'ElegantTypewriter', 'AnotherTypewriter', serif;
+	transition: transform 0.3s ease-in-out;
+}
+
+a {
+    font-family: 'Volta', serif;
+}
+
+span, div, li, ul, ol, blockquote, pre, code, em, strong, small {
+    font-family: 'Volta', serif;
+}
+
+p {
+	line-height: 1.1;
 }
 
 a {
@@ -102,4 +134,40 @@ button:focus:not(:focus-visible) {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+@keyframes rotate-1 {
+	from { transform: rotate(0); }
+	to { transform: rotate(-0.5deg); }
+}
+
+@keyframes rotate-2 {
+	from { transform: rotate(0); }
+	to { transform: rotate(0.5deg); }
+}
+
+@keyframes rotate-3 {
+	from { transform: rotate(0); }
+	to { transform: rotate(-0.25deg); }
+}
+
+@keyframes rotate-4 {
+	from { transform: rotate(0); }
+	to { transform: rotate(0.25deg); }
+}
+
+.rotate-1 {
+	animation: rotate-1 1s forwards;
+}
+
+.rotate-2 {
+	animation: rotate-2 1s forwards;
+}
+
+.rotate-3 {
+	animation: rotate-3 1s forwards;
+}
+
+.rotate-4 {
+	animation: rotate-4 1s forwards;
 }
