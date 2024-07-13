@@ -13,18 +13,32 @@ RUN exif_delete --replace ./**/*.PNG
 RUN exif_delete --replace ./**/*.gif
 RUN exif_delete --replace ./**/*.GIF
 
-# Stage 2: Build application
-FROM node:18-alpine AS builder
+# # Stage 2: Build application
+# FROM node:18-alpine AS builder
+# WORKDIR /app
+# COPY ./e012/package.json ./e012/package-lock.json ./
+# RUN npm install
+# COPY --from=prepare /app .
+# RUN npm run build
+# RUN ls -la
+
+# # Stage 3: Serve application
+# FROM node:18-alpine AS server
+# WORKDIR /app
+# COPY --from=builder /app/.svelte-kit/output ./build
+# EXPOSE 80
+# CMD ["node", "build/server/index.js"]
+
+# Stage 2: Build the application
+FROM node:18-alpine AS build
 WORKDIR /app
-COPY ./e012/package.json ./e012/package-lock.json ./
+COPY package*.json ./
 RUN npm install
 COPY --from=prepare /app .
 RUN npm run build
-RUN ls -la
 
-# Stage 3: Serve application
-FROM node:18-alpine AS server
-WORKDIR /app
-COPY --from=builder /app/.svelte-kit/output ./build
+# Stage 3: Serve the application
+FROM nginx:alpine
+COPY --from=build /app/build /usr/share/nginx/html
 EXPOSE 80
-CMD ["node", "build/server/index.js"]
+CMD ["nginx", "-g", "daemon off;"]
