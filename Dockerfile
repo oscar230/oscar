@@ -39,7 +39,8 @@ RUN npm run build
 RUN ls -la /app/build
 
 # Stage 3: Serve the application
-FROM nginx:alpine
-COPY --from=build /app/build /usr/share/nginx/html
+FROM node:18-alpine AS server
+WORKDIR /app
+COPY --from=build /app/build ./
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["node", "index.js"]
