@@ -24,7 +24,7 @@
 @font-face {
     font-family: 'ElegantTypewriter';
     src: url('/fonts/elegant-typewriter-light.ttf') format('truetype');
-    font-weight: lighter;
+    font-weight: 300; /* Use 300 for light fonts */
     font-style: normal;
 }
 
@@ -41,7 +41,7 @@
     font-family: 'JMHTypewriter';
     src: url('/fonts/jmh-typewriter-black.otf') format('opentype'),
          url('/fonts/jmh-typewriter-black.ttf') format('truetype');
-    font-weight: bolder;
+    font-weight: 900; /* Use 900 for black fonts */
     font-style: normal;
 }
 
@@ -57,7 +57,7 @@
     font-family: 'JMHTypewriter';
     src: url('/fonts/jmh-typewriter-thin.otf') format('opentype'),
          url('/fonts/jmh-typewriter-thin.ttf') format('truetype');
-    font-weight: lighter;
+    font-weight: 100; /* Use 100 for thin fonts */
     font-style: normal;
 }
 
@@ -84,7 +84,7 @@
          url('/fonts/volta-w01-medium-italic-v2.ttf') format('truetype'),
          url('/fonts/volta-w01-medium-italic-v2.otf') format('opentype'),
          url('/fonts/volta-w01-medium-italic-v2.svg#VoltaW01MediumItalicV2') format('svg');
-    font-weight: normal;
+    font-weight: 500; /* Use 500 for medium fonts */
     font-style: italic;
 }
 
@@ -97,7 +97,7 @@
          url('/fonts/volta-w01-medium-v2.ttf') format('truetype'),
          url('/fonts/volta-w01-medium-v2.otf') format('opentype'),
          url('/fonts/volta-w01-medium-v2.svg#VoltaW01MediumV2') format('svg');
-    font-weight: normal;
+    font-weight: 500; /* Use 500 for medium fonts */
     font-style: normal;
 }
 
@@ -110,6 +110,6 @@
          url('/fonts/volta-w01-regular.ttf') format('truetype'),
          url('/fonts/volta-w01-regular.otf') format('opentype'),
          url('/fonts/volta-w01-regular.svg#VoltaW01Regular') format('svg');
-    font-weight: lighter;
+    font-weight: normal;
     font-style: normal;
 }
