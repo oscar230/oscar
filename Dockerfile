@@ -22,6 +22,8 @@ RUN npm install
 COPY --from=prepare /app ./
 RUN npm run build
 RUN ls -la /app/build
+RUN ls -la /app/build/server
+
 
 # Stage 3: Serve the application
 FROM node:18-alpine AS server
