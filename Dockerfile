@@ -1,8 +1,7 @@
-# Stage 1: Prepare content
-# FROM python:3-bookworm AS prepare
-# WORKDIR /app
-# COPY ./e012/ ./
-# Uncomment and run optimization and minification tools as needed
+# Prepare
+FROM python:3-bookworm AS prepare
+WORKDIR /app/
+COPY ./e012/ ./
 # RUN pip install pillow optimize-images css-html-js-minify exif_delete
 # RUN optimize-images ./
 # RUN css-html-js-minify ./
@@ -14,21 +13,15 @@
 # RUN exif_delete --replace ./**/*.gif
 # RUN exif_delete --replace ./**/*.GIF
 
-# Stage 2: Build the application
-FROM node:18 AS build
+# Build
+FROM node:21-alpine as build
 WORKDIR /app
 COPY e012/package*.json ./
 RUN npm install
-COPY e012/ .
+COPY --from=prepare /app ./
 RUN npm run build
-ENV NODE_OPTIONS="--experimental-modules"
-CMD ["node", "build/server/index.js"]
 
-# Stage 3: Serve the application
-# FROM node:18 AS server
-# WORKDIR /app
-# COPY --from=build /app/build ./
-# COPY ./e012/package*.json ./
-# RUN npm install --production
-# EXPOSE 80
-# CMD ["node", "server/index.js"]
+# Serve 
+FROM ghcr.io/static-web-server/static-web-server:2 as server
+COPY --from=build /app/dist /public
+EXPOSE 80
