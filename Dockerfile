@@ -30,4 +30,4 @@ COPY --from=build /app/build ./
 COPY --from=build /app/package*.json ./
 RUN npm install --production
 EXPOSE 80
-CMD ["node", "index.js"]
+CMD ["node", "build/server/index.js"]
