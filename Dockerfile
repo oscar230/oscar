@@ -36,6 +36,7 @@ COPY --from=prepare /app/package*.json ./
 RUN npm install
 COPY --from=prepare /app .
 RUN npm run build
+RUN ls -la
 
 # Stage 3: Serve the application
 FROM nginx:alpine
