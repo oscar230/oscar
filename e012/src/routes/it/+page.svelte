@@ -1,4 +1,4 @@
-<section>
+<div class="text-column">
     <h1>My IT career</h1>
     <p>I am currently <b>not</b> seeking new full-time employment but am open to side projects.</p>
     <p><a href="/documents/CV.pdf" target="_blank">Download CV</a></p>
@@ -52,4 +52,4 @@
             <td>Developed a customer portal using Angular JS.</td>
         </tr>
     </table>
-</section>
+</div>
