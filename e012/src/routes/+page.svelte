@@ -3,9 +3,18 @@
 	<meta name="description" content="E012 website" />
 </svelte:head>
 
+<script>
+    import Typewriter, { cascade } from 'svelte-typewriter'
+</script>
+
 <section>
 	<h1>E012</h1>
-	<p>Recreational techno DJ and self proclaimed computer genius.</p>
+	<Typewriter keepCursorOnFinish={true} interval={90} mode={"loopOnce"} wordInterval={1000}>
+		<p>DJ and technology enthusiast.</p>
+		<p>Techno DJ and computer geek.</p>
+		<p>Recreational techno DJ with a passion for computing.</p>
+		<p>Recreational techno DJ and self proclaimed computer genius.</p>
+	</Typewriter>
 </section>
 
 <style>
