@@ -1,6 +1,6 @@
 # Prepare content
 FROM python:3-bookworm AS prepare
-WORKDIR /app/
+WORKDIR /app
 COPY ./e012/ ./
 RUN pip install pillow optimize-images css-html-js-minify exif_delete
 RUN optimize-images ./
@@ -19,7 +19,7 @@ FROM node:18-alpine AS builder
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install
-COPY --from=prepare ./e012 .
+COPY --from=prepare . .
 RUN npm run build
 
 # Serve application
