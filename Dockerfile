@@ -21,15 +21,12 @@ COPY ./e012/package*.json ./
 RUN npm install
 COPY --from=prepare /app ./
 RUN npm run build
-RUN ls -la /app/build
-RUN ls -la /app/build/server
-
 
 # Stage 3: Serve the application
 FROM node:18-alpine AS server
 WORKDIR /app
 COPY --from=build /app/build ./
-COPY --from=build /app/package*.json ./
+COPY ./e012/package*.json ./
 RUN npm install --production
 EXPOSE 80
-CMD ["node", "build/server/index.js"]
+CMD ["node", "server/index.js"]
