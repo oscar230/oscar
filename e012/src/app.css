@@ -26,7 +26,7 @@ body, h1, h2, h3, h4, h5, h6 {
     font-family: 'Volta', 'JMHTypewriter', 'ElegantTypewriter', 'AnotherTypewriter', serif;
 }
 
-p, a, span, div, li, ul, ol, blockquote, pre, em, strong, small {
+p, a, span, div, li, ul, ol, blockquote, em, strong, small {
     font-family: 'JMHTypewriter', 'ElegantTypewriter', 'AnotherTypewriter', serif;
 }
 
@@ -39,14 +39,16 @@ h2 {
     font-weight: 600; /* Slightly less bold than h1 */
 }
 
-h3, h4, h5, h6, strong {
+h3, h4, h5, h6, strong, small {
     font-weight: 500; /* Medium weight for h3 */
 }
 
-code {
+code, pre {
+	display: block;
 	font-family: 'ElegantTypewriter', serif;
-	padding: 0.5em;
-	background-color: var(--color-bg-1);
+	padding: 0.3em;
+	margin: 0;
+	background-color: var(--color-bg-2);
 }
 
 p {

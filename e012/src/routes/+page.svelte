@@ -5,6 +5,7 @@
 
 <section>
 	<h1>E012</h1>
+	<p>Recreational techno DJ and self proclaimed computer genius.</p>
 </section>
 
 <style>
@@ -18,5 +19,6 @@
 
 	h1 {
 		font-size: 10vw;
+		margin-bottom: 0.5rem;
 	}
 </style>

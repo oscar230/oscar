@@ -8,6 +8,15 @@
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>
+			<li aria-current={$page.url.pathname === '/it' ? 'page' : undefined}>
+				<a href="/it">IT</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/dj' ? 'page' : undefined}>
+				<a href="/dj">DJ</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/contact' ? 'page' : undefined}>
+				<a href="/contact">Contact</a>
+			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
 				<a href="/about">About</a>
 			</li>
