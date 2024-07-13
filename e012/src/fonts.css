@@ -113,3 +113,26 @@
     font-weight: 400; /* Use 400 for normal */
     font-style: normal;
 }
+
+/* Global Font Settings */
+body, h1, h2, h3, h4, h5, h6, p, a, span, div, li, ul, ol, blockquote, pre, code, em, strong, small {
+    font-family: 'Volta', 'JMHTypewriter', 'ElegantTypewriter', 'AnotherTypewriter', serif;
+}
+
+/* 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Volta', serif;
+}
+
+p {
+    font-family: 'Volta', 'JMHTypewriter', 'ElegantTypewriter', 'AnotherTypewriter', serif;
+}
+
+a {
+    font-family: 'Volta', serif;
+}
+
+span, div, li, ul, ol, blockquote, pre, code, em, strong, small {
+    font-family: 'Volta', serif;
+}
+*/
