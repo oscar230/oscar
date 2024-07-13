@@ -32,7 +32,7 @@ COPY ./e012/ ./
 # Stage 2: Build the application
 FROM node:18-alpine AS build
 WORKDIR /app
-COPY --from=prepare package*.json ./
+COPY --from=prepare /app/package*.json ./
 RUN npm install
 COPY --from=prepare /app .
 RUN npm run build
