@@ -1,7 +1,7 @@
-# # Stage 1: Prepare content
-# FROM python:3-bookworm AS prepare
-# WORKDIR /app
-# COPY ./e012/ ./
+# Stage 1: Prepare content
+FROM python:3-bookworm AS prepare
+WORKDIR /app
+COPY ./e012/ ./
 # RUN pip install pillow optimize-images css-html-js-minify exif_delete
 # RUN optimize-images ./
 # RUN css-html-js-minify ./
@@ -32,7 +32,7 @@
 # Stage 2: Build the application
 FROM node:18-alpine AS build
 WORKDIR /app
-COPY package*.json ./
+COPY --from=prepare package*.json ./
 RUN npm install
 COPY --from=prepare /app .
 RUN npm run build
