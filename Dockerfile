@@ -2,6 +2,7 @@
 FROM python:3-bookworm AS prepare
 WORKDIR /app
 COPY ./e012/ ./
+# Uncomment and run optimization and minification tools as needed
 # RUN pip install pillow optimize-images css-html-js-minify exif_delete
 # RUN optimize-images ./
 # RUN css-html-js-minify ./
@@ -13,28 +14,12 @@ COPY ./e012/ ./
 # RUN exif_delete --replace ./**/*.gif
 # RUN exif_delete --replace ./**/*.GIF
 
-# # Stage 2: Build application
-# FROM node:18-alpine AS builder
-# WORKDIR /app
-# COPY ./e012/package.json ./e012/package-lock.json ./
-# RUN npm install
-# COPY --from=prepare /app .
-# RUN npm run build
-# RUN ls -la
-
-# # Stage 3: Serve application
-# FROM node:18-alpine AS server
-# WORKDIR /app
-# COPY --from=builder /app/.svelte-kit/output ./build
-# EXPOSE 80
-# CMD ["node", "build/server/index.js"]
-
 # Stage 2: Build the application
 FROM node:18-alpine AS build
 WORKDIR /app
-COPY --from=prepare /app/package*.json ./
+COPY ./e012/package*.json ./
 RUN npm install
-COPY --from=prepare /app .
+COPY --from=prepare /app ./
 RUN npm run build
 RUN ls -la /app/build
 
@@ -42,5 +27,7 @@ RUN ls -la /app/build
 FROM node:18-alpine AS server
 WORKDIR /app
 COPY --from=build /app/build ./
+COPY --from=build /app/package*.json ./
+RUN npm install --production
 EXPOSE 80
 CMD ["node", "index.js"]
