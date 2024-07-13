@@ -119,8 +119,12 @@ body, h1, h2, h3, h4, h5, h6, p, a, span, div, li, ul, ol, blockquote, pre, code
     font-family: 'Volta', 'JMHTypewriter', 'ElegantTypewriter', 'AnotherTypewriter', serif;
 }
 
-/* 
-h1, h2, h3, h4, h5, h6 {
+/* Specific Header Styles */
+h1 {
+    font-weight: 700; /* Use bold version of Volta */
+}
+
+h2, h3, h4, h5, h6 {
     font-family: 'Volta', serif;
 }
 
@@ -135,4 +139,3 @@ a {
 span, div, li, ul, ol, blockquote, pre, code, em, strong, small {
     font-family: 'Volta', serif;
 }
-*/
