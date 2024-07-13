@@ -19,7 +19,7 @@ FROM node:18-alpine AS builder
 WORKDIR /app
 COPY ./e012/package.json ./e012/package-lock.json ./
 RUN npm install
-COPY --from=prepare . .
+COPY --from=prepare /app .
 RUN npm run build
 
 # Serve application
