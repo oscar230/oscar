@@ -20,11 +20,12 @@ COPY ./e012/package.json ./e012/package-lock.json ./
 RUN npm install
 COPY --from=prepare /app .
 RUN npm run build
+RUN ls -la
 
 # Stage 3: Serve application
 FROM node:18-alpine AS server
 WORKDIR /app
-COPY --from=builder /app/build ./build
+COPY --from=builder /app/.svelte-kit/output ./build
 RUN npm install -g serve
 EXPOSE 80
 CMD ["serve", "-s", "build", "-l", "80"]
