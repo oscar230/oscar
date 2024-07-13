@@ -17,7 +17,7 @@ RUN exif_delete --replace ./**/*.GIF
 # Build
 FROM node:18-alpine AS builder
 WORKDIR /app
-COPY package.json package-lock.json ./
+COPY ./e012/package.json ./e012/package-lock.json ./
 RUN npm install
 COPY --from=prepare . .
 RUN npm run build
