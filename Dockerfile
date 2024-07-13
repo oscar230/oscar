@@ -26,6 +26,5 @@ RUN ls -la
 FROM node:18-alpine AS server
 WORKDIR /app
 COPY --from=builder /app/.svelte-kit/output ./build
-RUN npm install -g serve
 EXPOSE 80
-CMD ["serve", "-s", "build", "-l", "80"]
+CMD ["node", "build/server/index.js"]
