@@ -23,5 +23,5 @@ RUN npm run build
 
 # Serve 
 FROM ghcr.io/static-web-server/static-web-server:2 as server
-COPY --from=build /app/dist /public
+COPY --from=build /app/build /public
 EXPOSE 80
