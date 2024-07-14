@@ -9,7 +9,6 @@
 
 <div class="text-column">
 	<h1>About</h1>
-	<p>test</p>
 	<p>E012.se, no rights reserved! <img src="{kopimi}" alt="The logotype of Kopimi" class="kopimi"></p>
 	<h2>Used licenses</h2>
     <p>E012 uses the following fonts under respective licenses:</p>
