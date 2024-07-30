@@ -1,6 +1,6 @@
 <svelte:head>
-	<title>About E012</title>
-	<meta name="description" content="About E012" />
+	<title>Contact E012</title>
+	<meta name="description" content="Contact E012" />
 </svelte:head>
 
 <div class="text-column">

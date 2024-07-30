@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>Music E012</title>
+	<meta name="description" content="Music E012" />
+</svelte:head>
+
 <div class="text-column">
     <h1>My musical adventure</h1>
     <p>Do you want me to play at your next festival or rave?<br>Feel free <a href="/contact" class="wiggle">to contact me</a>.</p>

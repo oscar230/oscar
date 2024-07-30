@@ -1,3 +1,8 @@
+<svelte:head>
+	<title>IT E012</title>
+	<meta name="description" content="IT E012" />
+</svelte:head>
+
 <div class="text-column">
     <h1>My IT career</h1>
     <p>I am currently <b>not</b> seeking new full-time employment but am open to side projects.</p>
