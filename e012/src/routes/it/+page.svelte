@@ -5,8 +5,8 @@
 
 <div class="text-column">
     <h1>My IT career</h1>
-    <p>I am currently <b>not</b> seeking new full-time employment but am open to side projects.</p>
-    <p><a href="/documents/CV.pdf" target="_blank">Download CV</a></p>
+    <p>I am <b>not</b> seeking a new full-time employment.</p>
+    <!-- <p><a href="/documents/CV.pdf" target="_blank">Download CV</a></p> -->
     <h2>My bachelor thesis dissertation</h2>
     <p><b>Tor och webbplatsorakel: Konstruktion och utvärdering av webbplatsorakel från DNS-tidtagning i Tor-nätverket</b></p>
     <p>
