@@ -18,7 +18,11 @@
             The website oracle is constructed and test are carried out, with great outcome, resulting in that website oracles from timing DNS is not an attack that puts individuals using Tor at risk, but certanly challanges the idea of an anonymity network when such a lot of data can be derived from DNS.
         </q>
     </p>
-    <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-82564" target="_blank" rel="noopener noreferrer">View dissertation at DiVA</a> or <a href="https://www.diva-portal.org/smash/get/diva2:1522023/FULLTEXT01.pdf" target="_blank" rel="noopener noreferrer">direct download (PDF)</a>.
+    <p>
+        View the dissertation for free <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-82564" target="_blank" rel="noopener noreferrer">at DiVA</a> (or <a href="https://www.diva-portal.org/smash/get/diva2:1522023/FULLTEXT01.pdf" target="_blank" rel="noopener noreferrer">download directly (PDF)</a>).
+        <br />
+        This attack has since 2021 been studied further and a solution has been suggested by Rasmus Dahlberg and Tobias Pulls at Karlstad University, this was presented at <a href="https://www.usenix.org/conference/usenixsecurity23/presentation/dahlberg" target="_blank" rel="noopener noreferrer">USENIX 2023</a> as <i>Timeless Timing Attacks and Preload Defenses in Tor's DNS Cache</i>. You can read the report <a href="https://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-94325" target="_blank" rel="noopener noreferrer">at DiVA</a>.
+    </p>
     <h2>Current and past experiences</h2>
     <table border="1">
         <tr>
