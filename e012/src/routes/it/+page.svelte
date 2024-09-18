@@ -6,7 +6,6 @@
 <div class="text-column">
     <h1>My IT career</h1>
     <p>I am <b>not</b> seeking a new full-time employment.</p>
-    <!-- <p><a href="/documents/CV.pdf" target="_blank">Download CV</a></p> -->
     <h2>My bachelor thesis dissertation</h2>
     <p><b>Tor och webbplatsorakel: Konstruktion och utvärdering av webbplatsorakel från DNS-tidtagning i Tor-nätverket</b></p>
     <p>
@@ -61,4 +60,5 @@
             <td>Developed a customer portal using Angular JS.</td>
         </tr>
     </table>
+    <p>Here is my <a href="/documents/CV.pdf" target="_blank">CV</a>.</p>
 </div>
