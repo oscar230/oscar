@@ -7,6 +7,7 @@
     <h1>My IT career</h1>
     <p>I am <b>not</b> seeking a new full-time employment.</p>
     <h2>My bachelor thesis dissertation</h2>
+    <p><b>Note</b> that the paper is in swedish (except for the abstract), if you would like an explanation of this attack in english refeer to the paper by Tobias and Rasmus linked below.</p>
     <p><b>Tor och webbplatsorakel: Konstruktion och utvärdering av webbplatsorakel från DNS-tidtagning i Tor-nätverket</b></p>
     <p>
         <q cite='http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-82564'>
@@ -19,7 +20,8 @@
     </p>
     <p>
         View the dissertation for free <a href="http://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-82564" target="_blank" rel="noopener noreferrer">at DiVA</a> (or <a href="https://www.diva-portal.org/smash/get/diva2:1522023/FULLTEXT01.pdf" target="_blank" rel="noopener noreferrer">download directly (PDF)</a>).
-        <br />
+    </p>
+    <p>
         This attack has since 2021 been studied further and a solution has been suggested by Rasmus Dahlberg and Tobias Pulls at Karlstad University, this was presented at <a href="https://www.usenix.org/conference/usenixsecurity23/presentation/dahlberg" target="_blank" rel="noopener noreferrer">USENIX 2023</a> as <i>Timeless Timing Attacks and Preload Defenses in Tor's DNS Cache</i>. You can read the report <a href="https://urn.kb.se/resolve?urn=urn:nbn:se:kau:diva-94325" target="_blank" rel="noopener noreferrer">at DiVA</a>.
     </p>
     <h2>Current and past experiences</h2>
