@@ -14,7 +14,7 @@
 	<p>E012.se hosts some projects on it's servers, these are either projects that I like or that I'm a part of. If you would like to host your project here or have any legal comments regarding the projects, please <a href="/contact">contact me</a>. Some of the projects include <a href="https://grupp054.se/" target="_blank" rel="noopener noreferrer">Grupp 054</a>, <a href="https://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> and <a href="https://oresundspacecollective.com/" target="_blank" rel="noopener noreferrer">Øresund Space Collective</a>.</p>
 	
 	<h2>Contribute to the Tor Network</h2>
-	<p>Enable this Snowflake and leave the tab open to help internet users in oppressive regimes by routing traffic trough your browser into the Tor Network. Thanks. <3</p>
+	<p>Enable this Snowflake and leave the tab open to help internet users in oppressive regimes by routing traffic trough your browser into the Tor Network. Thanks!</p>
 	<iframe src="https://snowflake.torproject.org/embed.html" width="320" height="240" frameborder="0" scrolling="no"></iframe>
 	<br/>	
 	<h2>Used licenses</h2>
