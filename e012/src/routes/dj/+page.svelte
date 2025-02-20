@@ -23,6 +23,8 @@
     </ul>
     <h2>Recordings</h2>
     <div id="recordings">
+        <iframe title="OSCAR - Live @ Kokrummet 15.02.2025" width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2038625444&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
         <iframe title="Techno/Psytrance jan. 2025" width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Foscaande%2Finf%25C3%25B6r-cirkusen-2025%2F" frameborder="0" ></iframe>
 
         <iframe title="Söön Radio - Oscar 2024" width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1804726521&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
