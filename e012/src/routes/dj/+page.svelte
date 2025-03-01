@@ -4,11 +4,12 @@
 </svelte:head>
 
 <div class="text-column">
-    <h1>My musical adventure</h1>
+    <h1>E012</h1>
     <p>Do you want me to play at your next festival or rave?<br>Feel free <a href="/contact" class="wiggle">to contact me</a>.</p>
+    <img src="/dj/DSC04068.JPG" alt="A image of E012 in a dimly lit basement dressed in a military jacket" class="header-image">
     <h2>Upcoming memories</h2>
     <ul>
-        <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2025-07-25/27</li>
+        <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2025-07-25 to 27th</li>
     </ul>
     <h2>My favorite moments</h2>
     <ul>
@@ -61,5 +62,15 @@
 
     #recordings {
         margin: 1rem 0;
+    }
+
+    .header-image {
+        width: 25rem;
+        max-width: 90vw;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 </style>
