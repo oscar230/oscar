@@ -8,11 +8,11 @@
     <p>Do you want me to play at your next festival or rave?<br>Feel free <a href="/contact" class="wiggle">to contact me</a>.</p>
     <h2>Upcoming memories</h2>
     <ul>
-        <li><a href="https://www.dapevent.se/" target="_blank" rel="noopener noreferrer">DAP Kokrummet</a> 2025-02-15</li>
         <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2025-07-25/27</li>
     </ul>
     <h2>My favorite moments</h2>
     <ul>
+        <li><a href="https://www.dapevent.se/" target="_blank" rel="noopener noreferrer">DAP Kokrummet</a> 2025-02-15</li>
         <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2024</li>
         <li><a href="https://grupp054.se/" target="_blank" rel="noopener noreferrer">Grupp 054</a>'s 8 years celebration at <a href="https://www.goodguysbrew.com" target="_blank" rel="noopener noreferrer">Good Guys</a>, 2024</li>
         <li>Some tents and one beach at <a href="https://theborderland.se/">The Borderland</a>, a burn in 2023</li>
@@ -23,12 +23,21 @@
     </ul>
     <h2>Recordings</h2>
     <div id="recordings">
-        <iframe title="Söön Radio - Oscar 2" width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1804726521&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        <iframe title="OSCAR - Live @ Kokrummet 15.02.2025" width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2038625444&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+        <iframe title="Techno/Psytrance jan. 2025" width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Foscaande%2Finf%25C3%25B6r-cirkusen-2025%2F" frameborder="0" ></iframe>
+
+        <iframe title="Söön Radio - Oscar 2024" width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1804726521&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        
         <iframe title="We Fly Wild festival 2023 progressive hype mix" width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Foscaande%2Fwfw-vibbar%2F" frameborder="0" ></iframe>
-        <iframe title="Söön Radio - Oscar 1" width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1804726521&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        
+        <iframe title="Söön Radio - Oscar 2023" width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1513888798&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        
         <iframe title="Pizzadisco på Bakgården (10e september)" width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1338243931&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+        
         <iframe title="Funk & nuDisco på Baron" width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Foscaande%2Ffunk-nudisco-p%C3%A5-baron%2F" frameborder="0" ></iframe>
-        <iframe title="Pizzavibbar" width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Foscaande%2Fpizzavibbar%2F" frameborder="0" ></iframe>
+        
+        <iframe title="Pizzavibbar 2022" width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Foscaande%2Fpizzavibbar%2F" frameborder="0" ></iframe>
     </div>
 </div>
 
