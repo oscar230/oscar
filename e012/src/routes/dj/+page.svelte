@@ -17,11 +17,11 @@
         <li><a href="https://www.dapevent.se/" target="_blank" rel="noopener noreferrer">DAP Kokrummet</a> 2025-02-15</li>
         <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2024-07-19/21</li>
         <li><a href="https://grupp054.se/" target="_blank" rel="noopener noreferrer">Grupp 054</a>'s 8 years celebration at <a href="https://www.goodguysbrew.com" target="_blank" rel="noopener noreferrer">Good Guys</a>, 2024</li>
-        <li>Some tents and one beach at <a href="https://theborderland.se/">The Borderland</a>, a burn in 2023</li>
+        <li><a href="https://theborderland.se/">The Borderland</a>, a burn in 2023</li>
         <li><a href="https://www.weflywild.com/weflywildfestival">We Fly Wild Festival</a> 2023</li>
         <li>Dunderkravallen at <a href="https://www.nojesfabriken.se" target="_blank" rel="noopener noreferrer">Nöjesfabriken</a>, 2019</li>
         <li>My first time getting paid (not in drinks) <a href="https://www.instagram.com/korianderkarlstad/?hl=en">Koriander</a>, 2018</li>
-        <li>My first ever gig at my friend's birthday party, 2016</li>
+        <li>My first ever gig, at my friend's birthday party, 2016-07-30</li>
     </ul>
     <h2>Recordings</h2>
     <div id="recordings">
