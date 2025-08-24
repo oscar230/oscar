@@ -8,12 +8,13 @@
     <p>Do you want me to play at your next festival or rave?<br>Feel free <a href="/contact" class="wiggle">to contact me</a>.</p>
     <h2>Upcoming memories</h2>
     <ul>
-        <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2025-07-25/27</li>
+        <li>Valkyria 2025-08-29/31</li>
     </ul>
     <h2>My favorite moments</h2>
     <ul>
+        <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2025-07-25/27</li>
         <li><a href="https://www.dapevent.se/" target="_blank" rel="noopener noreferrer">DAP Kokrummet</a> 2025-02-15</li>
-        <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2024</li>
+        <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2024-07-19/21</li>
         <li><a href="https://grupp054.se/" target="_blank" rel="noopener noreferrer">Grupp 054</a>'s 8 years celebration at <a href="https://www.goodguysbrew.com" target="_blank" rel="noopener noreferrer">Good Guys</a>, 2024</li>
         <li>Some tents and one beach at <a href="https://theborderland.se/">The Borderland</a>, a burn in 2023</li>
         <li><a href="https://www.weflywild.com/weflywildfestival">We Fly Wild Festival</a> 2023</li>
