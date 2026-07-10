@@ -7,12 +7,13 @@
     <h1>E012</h1>
     <p>Do you want me to play at your next festival or rave?<br>Feel free <a href="/contact" class="wiggle">to contact me</a>.</p>
     <img src="/dj/DSC04068.JPG" alt="A image of E012 in a dimly lit basement dressed in a military jacket" class="header-image">
-    <h2>Upcoming memories</h2>
+    <!-- <h2>Upcoming memories</h2>
     <ul>
-        <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandets Förfest</a> 2026-07-11</li>
-    </ul>
+        <li></li>
+    </ul> -->
     <h2>My favorite moments</h2>
     <ul>
+        <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandets Förfest</a> 2026-07-11</li>
         <li>Modern Nederländsk Folkdans - Into The Woods 2026-05-16</li>
         <li><a href="https://www.dapevent.se/" target="_blank" rel="noopener noreferrer">DAP Kokrummet (E012 B2B Heden)</a> 2025-10-11</li>
         <li>Valkyria 2025-08-29/31</li>
