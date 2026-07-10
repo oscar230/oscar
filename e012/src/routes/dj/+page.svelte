@@ -9,10 +9,13 @@
     <img src="/dj/DSC04068.JPG" alt="A image of E012 in a dimly lit basement dressed in a military jacket" class="header-image">
     <h2>Upcoming memories</h2>
     <ul>
-        <li>Valkyria 2025-08-29/31</li>
+        <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandets Förfest</a> 2026-07-11</li>
     </ul>
     <h2>My favorite moments</h2>
     <ul>
+        <li>Modern Nederländsk Folkdans - Into The Woods 2026-05-16</li>
+        <li><a href="https://www.dapevent.se/" target="_blank" rel="noopener noreferrer">DAP Kokrummet (E012 B2B Heden)</a> 2025-10-11</li>
+        <li>Valkyria 2025-08-29/31</li>
         <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2025-07-25/27</li>
         <li><a href="https://www.dapevent.se/" target="_blank" rel="noopener noreferrer">DAP Kokrummet</a> 2025-02-15</li>
         <li><a href="http://klanglandet.se/" target="_blank" rel="noopener noreferrer">Klanglandet</a> 2024-07-19/21</li>
@@ -25,6 +28,9 @@
     </ul>
     <h2>Recordings</h2>
     <div id="recordings">
+    
+        <iframe title="Heden b2b E012 (Industrial techno) - Live @ Kokrummet 11.10.2025" width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2196429931&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
         <iframe title="OSCAR - Live @ Kokrummet 15.02.2025" width="100%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2038625444&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 
         <iframe title="Techno/Psytrance jan. 2025" width="100%" height="120" src="https://player-widget.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Foscaande%2Finf%25C3%25B6r-cirkusen-2025%2F" frameborder="0" ></iframe>
